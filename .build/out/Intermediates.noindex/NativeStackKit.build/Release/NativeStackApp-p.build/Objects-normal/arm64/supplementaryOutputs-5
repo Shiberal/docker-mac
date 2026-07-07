@@ -1,0 +1,11 @@
+{
+  "/Users/shiberal/Desktop/cartella senza nome 4/Sources/NativeStackApp/ActivityMonitorView.swift" : {
+    "abi-baseline-json" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/NativeStackApp-p.build/Objects-normal/arm64/NativeStackApp.abi.json",
+    "const-values" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/NativeStackApp-p.build/Objects-normal/arm64/NativeStackApp-primary.swiftconstvalues",
+    "dependencies" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/NativeStackApp-p.build/Objects-normal/arm64/NativeStackApp-primary.d",
+    "diagnostics" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/NativeStackApp-p.build/Objects-normal/arm64/NativeStackApp-primary.dia",
+    "swiftdoc" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/NativeStackApp-p.build/Objects-normal/arm64/NativeStackApp.swiftdoc",
+    "swiftmodule" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/NativeStackApp-p.build/Objects-normal/arm64/NativeStackApp.swiftmodule",
+    "swiftsourceinfo" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/NativeStackApp-p.build/Objects-normal/arm64/NativeStackApp.swiftsourceinfo"
+  }
+}

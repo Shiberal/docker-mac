@@ -1,0 +1,16 @@
+{
+  "" : {
+    "const-values" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/NativeStackCLI-6CDEE1A6FC34F043-testable-t.build/Objects-normal/arm64/NativeStackCLI-6CDEE1A6FC34F043-testable-primary.swiftconstvalues",
+    "dependencies" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/NativeStackCLI-6CDEE1A6FC34F043-testable-t.build/Objects-normal/arm64/NativeStackCLI-6CDEE1A6FC34F043-testable-primary.d",
+    "diagnostics" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/NativeStackCLI-6CDEE1A6FC34F043-testable-t.build/Objects-normal/arm64/NativeStackCLI-6CDEE1A6FC34F043-testable-primary.dia",
+    "emit-module-dependencies" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/NativeStackCLI-6CDEE1A6FC34F043-testable-t.build/Objects-normal/arm64/NativeStackCLI-6CDEE1A6FC34F043-testable-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/NativeStackCLI-6CDEE1A6FC34F043-testable-t.build/Objects-normal/arm64/NativeStackCLI-6CDEE1A6FC34F043-testable-primary-emit-module.dia",
+    "pch" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/NativeStackCLI-6CDEE1A6FC34F043-testable-t.build/Objects-normal/arm64/NativeStackCLI-6CDEE1A6FC34F043-testable-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/NativeStackCLI-6CDEE1A6FC34F043-testable-t.build/Objects-normal/arm64/NativeStackCLI-6CDEE1A6FC34F043-testable-primary.swiftdeps"
+  },
+  "/Users/shiberal/Desktop/cartella senza nome 4/Sources/NativeStackCLI/main.swift" : {
+    "index-unit-output-path" : "/NativeStackKit.build/Release/NativeStackCLI-6CDEE1A6FC34F043-testable-t.build/Objects-normal/arm64/main.o",
+    "llvm-bc" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/NativeStackCLI-6CDEE1A6FC34F043-testable-t.build/Objects-normal/arm64/main.bc",
+    "object" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/NativeStackCLI-6CDEE1A6FC34F043-testable-t.build/Objects-normal/arm64/main.o"
+  }
+}

@@ -7,11 +7,7 @@ public struct ContainerCLIConfiguration: Sendable {
 
     public init(
         binaryPath: String? = nil,
-        searchPaths: [String] = [
-            "/usr/local/bin",
-            "/opt/homebrew/bin",
-            "\(NSHomeDirectory())/.local/bin",
-        ]
+        searchPaths: [String] = ContainerCLIConfiguration.defaultSearchPaths
     ) {
         if let binaryPath {
             self.binaryPath = binaryPath
@@ -23,7 +19,25 @@ public struct ContainerCLIConfiguration: Sendable {
         self.searchPaths = searchPaths
     }
 
-    private static func resolveBinary(in paths: [String]) -> String? {
+    public static let defaultSearchPaths: [String] = [
+        "/opt/homebrew/bin",
+        "/opt/homebrew/opt/container/bin",
+        "/usr/local/bin",
+        "/usr/local/opt/container/bin",
+        "\(NSHomeDirectory())/.local/bin",
+    ]
+
+    public func resolvedInstalledPath() -> String? {
+        if binaryPath.contains("/"), FileManager.default.isExecutableFile(atPath: binaryPath) {
+            return binaryPath
+        }
+        if let found = Self.resolveBinary(in: searchPaths) {
+            return found
+        }
+        return Self.which("container")
+    }
+
+    public static func resolveBinary(in paths: [String]) -> String? {
         for dir in paths {
             let candidate = (dir as NSString).appendingPathComponent("container")
             if FileManager.default.isExecutableFile(atPath: candidate) {
@@ -31,6 +45,25 @@ public struct ContainerCLIConfiguration: Sendable {
             }
         }
         return nil
+    }
+
+    public static func which(_ name: String) -> String? {
+        let process = Process()
+        process.executableURL = URL(fileURLWithPath: "/usr/bin/which")
+        process.arguments = [name]
+        let pipe = Pipe()
+        process.standardOutput = pipe
+        process.standardError = Pipe()
+        do {
+            try process.run()
+            process.waitUntilExit()
+            guard process.terminationStatus == 0 else { return nil }
+            let path = String(data: pipe.fileHandleForReading.readDataToEndOfFile(), encoding: .utf8)?
+                .trimmingCharacters(in: .whitespacesAndNewlines)
+            return path?.isEmpty == false ? path : nil
+        } catch {
+            return nil
+        }
     }
 }
 
@@ -50,13 +83,14 @@ public actor ContainerCLI {
     public var binaryPath: String { config.binaryPath }
 
     public func isInstalled() -> Bool {
-        if config.binaryPath.contains("/") {
-            return FileManager.default.isExecutableFile(atPath: config.binaryPath)
-        }
-        return Self.which(config.binaryPath) != nil
+        config.resolvedInstalledPath() != nil
     }
 
-    public func run(_ arguments: [String], input: String? = nil) async throws -> CLIResult {
+    public func run(
+        _ arguments: [String],
+        input: String? = nil,
+        inheritIO: Bool = false
+    ) async throws -> CLIResult {
         guard isInstalled() else { throw NativeStackError.containerCLINotFound }
 
         let process = Process()
@@ -66,8 +100,17 @@ public actor ContainerCLI {
 
         let stdoutPipe = Pipe()
         let stderrPipe = Pipe()
-        process.standardOutput = stdoutPipe
-        process.standardError = stderrPipe
+
+        if inheritIO {
+            process.standardOutput = nil
+            process.standardError = nil
+            process.standardInput = nil
+        } else {
+            process.standardOutput = stdoutPipe
+            process.standardError = stderrPipe
+        }
+
+        let drainer = inheritIO ? nil : PipeDrainer(stdout: stdoutPipe, stderr: stderrPipe)
 
         if let input {
             let stdinPipe = Pipe()
@@ -83,25 +126,29 @@ public actor ContainerCLI {
 
         return try await withCheckedThrowingContinuation { continuation in
             process.terminationHandler = { proc in
-                let stdout = String(
-                    data: stdoutPipe.fileHandleForReading.readDataToEndOfFile(),
-                    encoding: .utf8
-                ) ?? ""
-                let stderr = String(
-                    data: stderrPipe.fileHandleForReading.readDataToEndOfFile(),
-                    encoding: .utf8
-                ) ?? ""
-                continuation.resume(returning: CLIResult(
-                    stdout: stdout,
-                    stderr: stderr,
-                    exitCode: proc.terminationStatus
-                ))
+                if let drainer {
+                    let (stdout, stderr) = drainer.collect()
+                    continuation.resume(returning: CLIResult(
+                        stdout: stdout,
+                        stderr: stderr,
+                        exitCode: proc.terminationStatus
+                    ))
+                } else {
+                    continuation.resume(returning: CLIResult(
+                        stdout: "",
+                        stderr: "",
+                        exitCode: proc.terminationStatus
+                    ))
+                }
             }
         }
     }
 
-    public func runOrThrow(_ arguments: [String]) async throws -> String {
-        let result = try await run(arguments)
+    public func runOrThrow(
+        _ arguments: [String],
+        inheritIO: Bool = false
+    ) async throws -> String {
+        let result = try await run(arguments, inheritIO: inheritIO)
         guard result.exitCode == 0 else {
             let output = [result.stdout, result.stderr]
                 .filter { !$0.isEmpty }
@@ -116,26 +163,6 @@ public actor ContainerCLI {
     }
 
     private func resolvedExecutablePath() -> String {
-        if config.binaryPath.contains("/") { return config.binaryPath }
-        return Self.which(config.binaryPath) ?? config.binaryPath
-    }
-
-    private static func which(_ name: String) -> String? {
-        let process = Process()
-        process.executableURL = URL(fileURLWithPath: "/usr/bin/which")
-        process.arguments = [name]
-        let pipe = Pipe()
-        process.standardOutput = pipe
-        process.standardError = Pipe()
-        do {
-            try process.run()
-            process.waitUntilExit()
-            guard process.terminationStatus == 0 else { return nil }
-            let path = String(data: pipe.fileHandleForReading.readDataToEndOfFile(), encoding: .utf8)?
-                .trimmingCharacters(in: .whitespacesAndNewlines)
-            return path?.isEmpty == false ? path : nil
-        } catch {
-            return nil
-        }
+        config.resolvedInstalledPath() ?? config.binaryPath
     }
 }

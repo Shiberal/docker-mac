@@ -1,0 +1,4 @@
+module NativeStackClient {
+header "NativeStackClient-Swift.h"
+export *
+}

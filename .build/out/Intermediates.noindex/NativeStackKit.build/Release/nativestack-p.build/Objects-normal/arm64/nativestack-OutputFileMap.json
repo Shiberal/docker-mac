@@ -1,0 +1,16 @@
+{
+  "" : {
+    "const-values" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/nativestack-p.build/Objects-normal/arm64/nativestack-primary.swiftconstvalues",
+    "dependencies" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/nativestack-p.build/Objects-normal/arm64/nativestack-primary.d",
+    "diagnostics" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/nativestack-p.build/Objects-normal/arm64/nativestack-primary.dia",
+    "emit-module-dependencies" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/nativestack-p.build/Objects-normal/arm64/nativestack-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/nativestack-p.build/Objects-normal/arm64/nativestack-primary-emit-module.dia",
+    "pch" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/nativestack-p.build/Objects-normal/arm64/nativestack-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/nativestack-p.build/Objects-normal/arm64/nativestack-primary.swiftdeps"
+  },
+  "/Users/shiberal/Desktop/cartella senza nome 4/Sources/NativeStackCLI/main.swift" : {
+    "index-unit-output-path" : "/NativeStackKit.build/Release/nativestack-p.build/Objects-normal/arm64/main.o",
+    "llvm-bc" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/nativestack-p.build/Objects-normal/arm64/main.bc",
+    "object" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/nativestack-p.build/Objects-normal/arm64/main.o"
+  }
+}

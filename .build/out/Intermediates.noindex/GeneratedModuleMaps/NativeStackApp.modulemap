@@ -1,0 +1,4 @@
+module NativeStackApp {
+header "NativeStackApp-Swift.h"
+export *
+}

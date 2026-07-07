@@ -15,6 +15,18 @@ struct SettingsView: View {
                     if let version = service.systemStatus.version {
                         LabeledContent("Version", value: version)
                     }
+                    if service.isInstallingToolkit {
+                        LabeledContent("Install") {
+                            HStack {
+                                ProgressView().controlSize(.small)
+                                Text(service.installPhase.label)
+                            }
+                        }
+                    } else if !service.isInstalled {
+                        Button("Install Container Toolkit") {
+                            Task { try? await service.installToolkit() }
+                        }
+                    }
                     HStack {
                         Button("Start Engine") {
                             Task { try? await service.startEngine() }
@@ -48,6 +60,10 @@ struct SettingsView: View {
             }
             .formStyle(.grouped)
             .tabItem { Label("Network", systemImage: "network") }
+
+            DockerSettingsView()
+                .environment(service)
+                .tabItem { Label("Docker", systemImage: "shippingbox.and.arrow.backward") }
 
             Form {
                 Section("CLI") {

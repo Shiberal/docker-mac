@@ -6,6 +6,10 @@ public enum NativeStackError: LocalizedError, Sendable {
     case parseFailed(context: String)
     case engineNotRunning
     case unsupportedPlatform
+    case installFailed(reason: String)
+    case installRequiresAdmin
+    case brewRequired
+    case dockerCompatibilityUnavailable(reason: String)
 
     public var errorDescription: String? {
         switch self {
@@ -22,6 +26,14 @@ public enum NativeStackError: LocalizedError, Sendable {
             return "Container engine is not running. Run `nativestack system start` or `container system start`."
         case .unsupportedPlatform:
             return "NativeStack requires Apple Silicon and macOS 26+ with Apple's container tool."
+        case let .installFailed(reason):
+            return "Failed to install container toolkit: \(reason)"
+        case .installRequiresAdmin:
+            return "Installing the container toolkit requires administrator approval."
+        case .brewRequired:
+            return "Homebrew is required to install Socktainer and Docker compatibility tools."
+        case let .dockerCompatibilityUnavailable(reason):
+            return reason
         }
     }
 }

@@ -1,0 +1,31 @@
+{
+  "" : {
+    "const-values" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/NativeStackCore-t.build/Objects-normal/arm64/NativeStackCore-primary.swiftconstvalues",
+    "dependencies" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/NativeStackCore-t.build/Objects-normal/arm64/NativeStackCore-primary.d",
+    "diagnostics" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/NativeStackCore-t.build/Objects-normal/arm64/NativeStackCore-primary.dia",
+    "emit-module-dependencies" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/NativeStackCore-t.build/Objects-normal/arm64/NativeStackCore-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/NativeStackCore-t.build/Objects-normal/arm64/NativeStackCore-primary-emit-module.dia",
+    "pch" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/NativeStackCore-t.build/Objects-normal/arm64/NativeStackCore-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/NativeStackCore-t.build/Objects-normal/arm64/NativeStackCore-primary.swiftdeps"
+  },
+  "/Users/shiberal/Desktop/cartella senza nome 4/Sources/NativeStackCore/Errors.swift" : {
+    "index-unit-output-path" : "/NativeStackKit.build/Release/NativeStackCore-t.build/Objects-normal/arm64/Errors.o",
+    "llvm-bc" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/NativeStackCore-t.build/Objects-normal/arm64/Errors.bc",
+    "object" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/NativeStackCore-t.build/Objects-normal/arm64/Errors.o"
+  },
+  "/Users/shiberal/Desktop/cartella senza nome 4/Sources/NativeStackCore/InstallModels.swift" : {
+    "index-unit-output-path" : "/NativeStackKit.build/Release/NativeStackCore-t.build/Objects-normal/arm64/InstallModels.o",
+    "llvm-bc" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/NativeStackCore-t.build/Objects-normal/arm64/InstallModels.bc",
+    "object" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/NativeStackCore-t.build/Objects-normal/arm64/InstallModels.o"
+  },
+  "/Users/shiberal/Desktop/cartella senza nome 4/Sources/NativeStackCore/Models.swift" : {
+    "index-unit-output-path" : "/NativeStackKit.build/Release/NativeStackCore-t.build/Objects-normal/arm64/Models.o",
+    "llvm-bc" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/NativeStackCore-t.build/Objects-normal/arm64/Models.bc",
+    "object" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/NativeStackCore-t.build/Objects-normal/arm64/Models.o"
+  },
+  "/Users/shiberal/Desktop/cartella senza nome 4/Sources/NativeStackCore/UnixSocket.swift" : {
+    "index-unit-output-path" : "/NativeStackKit.build/Release/NativeStackCore-t.build/Objects-normal/arm64/UnixSocket.o",
+    "llvm-bc" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/NativeStackCore-t.build/Objects-normal/arm64/UnixSocket.bc",
+    "object" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/NativeStackCore-t.build/Objects-normal/arm64/UnixSocket.o"
+  }
+}

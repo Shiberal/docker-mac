@@ -1,0 +1,4 @@
+module NativeStackCLI {
+header "NativeStackCLI-Swift.h"
+export *
+}

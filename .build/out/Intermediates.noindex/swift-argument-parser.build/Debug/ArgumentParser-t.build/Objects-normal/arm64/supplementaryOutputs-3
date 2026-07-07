@@ -1,0 +1,51 @@
+{
+  "/Users/shiberal/Desktop/cartella senza nome 4/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Properties/ParentCommand.swift" : {
+    "const-values" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/swift-argument-parser.build/Debug/ArgumentParser-t.build/Objects-normal/arm64/ParentCommand.swiftconstvalues",
+    "dependencies" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/swift-argument-parser.build/Debug/ArgumentParser-t.build/Objects-normal/arm64/ParentCommand.d",
+    "diagnostics" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/swift-argument-parser.build/Debug/ArgumentParser-t.build/Objects-normal/arm64/ParentCommand.dia",
+    "object" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/swift-argument-parser.build/Debug/ArgumentParser-t.build/Objects-normal/arm64/ParentCommand.o",
+    "swift-dependencies" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/swift-argument-parser.build/Debug/ArgumentParser-t.build/Objects-normal/arm64/ParentCommand.swiftdeps"
+  },
+  "/Users/shiberal/Desktop/cartella senza nome 4/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Types/AsyncParsableCommand.swift" : {
+    "const-values" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/swift-argument-parser.build/Debug/ArgumentParser-t.build/Objects-normal/arm64/AsyncParsableCommand.swiftconstvalues",
+    "dependencies" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/swift-argument-parser.build/Debug/ArgumentParser-t.build/Objects-normal/arm64/AsyncParsableCommand.d",
+    "diagnostics" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/swift-argument-parser.build/Debug/ArgumentParser-t.build/Objects-normal/arm64/AsyncParsableCommand.dia",
+    "object" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/swift-argument-parser.build/Debug/ArgumentParser-t.build/Objects-normal/arm64/AsyncParsableCommand.o",
+    "swift-dependencies" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/swift-argument-parser.build/Debug/ArgumentParser-t.build/Objects-normal/arm64/AsyncParsableCommand.swiftdeps"
+  },
+  "/Users/shiberal/Desktop/cartella senza nome 4/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Types/CommandConfiguration.swift" : {
+    "const-values" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/swift-argument-parser.build/Debug/ArgumentParser-t.build/Objects-normal/arm64/CommandConfiguration.swiftconstvalues",
+    "dependencies" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/swift-argument-parser.build/Debug/ArgumentParser-t.build/Objects-normal/arm64/CommandConfiguration.d",
+    "diagnostics" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/swift-argument-parser.build/Debug/ArgumentParser-t.build/Objects-normal/arm64/CommandConfiguration.dia",
+    "object" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/swift-argument-parser.build/Debug/ArgumentParser-t.build/Objects-normal/arm64/CommandConfiguration.o",
+    "swift-dependencies" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/swift-argument-parser.build/Debug/ArgumentParser-t.build/Objects-normal/arm64/CommandConfiguration.swiftdeps"
+  },
+  "/Users/shiberal/Desktop/cartella senza nome 4/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Types/CommandGroup.swift" : {
+    "const-values" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/swift-argument-parser.build/Debug/ArgumentParser-t.build/Objects-normal/arm64/CommandGroup.swiftconstvalues",
+    "dependencies" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/swift-argument-parser.build/Debug/ArgumentParser-t.build/Objects-normal/arm64/CommandGroup.d",
+    "diagnostics" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/swift-argument-parser.build/Debug/ArgumentParser-t.build/Objects-normal/arm64/CommandGroup.dia",
+    "object" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/swift-argument-parser.build/Debug/ArgumentParser-t.build/Objects-normal/arm64/CommandGroup.o",
+    "swift-dependencies" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/swift-argument-parser.build/Debug/ArgumentParser-t.build/Objects-normal/arm64/CommandGroup.swiftdeps"
+  },
+  "/Users/shiberal/Desktop/cartella senza nome 4/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Types/EnumerableFlag.swift" : {
+    "const-values" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/swift-argument-parser.build/Debug/ArgumentParser-t.build/Objects-normal/arm64/EnumerableFlag.swiftconstvalues",
+    "dependencies" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/swift-argument-parser.build/Debug/ArgumentParser-t.build/Objects-normal/arm64/EnumerableFlag.d",
+    "diagnostics" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/swift-argument-parser.build/Debug/ArgumentParser-t.build/Objects-normal/arm64/EnumerableFlag.dia",
+    "object" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/swift-argument-parser.build/Debug/ArgumentParser-t.build/Objects-normal/arm64/EnumerableFlag.o",
+    "swift-dependencies" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/swift-argument-parser.build/Debug/ArgumentParser-t.build/Objects-normal/arm64/EnumerableFlag.swiftdeps"
+  },
+  "/Users/shiberal/Desktop/cartella senza nome 4/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Types/ExpressibleByArgument.swift" : {
+    "const-values" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/swift-argument-parser.build/Debug/ArgumentParser-t.build/Objects-normal/arm64/ExpressibleByArgument.swiftconstvalues",
+    "dependencies" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/swift-argument-parser.build/Debug/ArgumentParser-t.build/Objects-normal/arm64/ExpressibleByArgument.d",
+    "diagnostics" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/swift-argument-parser.build/Debug/ArgumentParser-t.build/Objects-normal/arm64/ExpressibleByArgument.dia",
+    "object" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/swift-argument-parser.build/Debug/ArgumentParser-t.build/Objects-normal/arm64/ExpressibleByArgument.o",
+    "swift-dependencies" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/swift-argument-parser.build/Debug/ArgumentParser-t.build/Objects-normal/arm64/ExpressibleByArgument.swiftdeps"
+  },
+  "/Users/shiberal/Desktop/cartella senza nome 4/.build/checkouts/swift-argument-parser/Sources/ArgumentParser/Parsable Types/ParsableArguments.swift" : {
+    "const-values" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/swift-argument-parser.build/Debug/ArgumentParser-t.build/Objects-normal/arm64/ParsableArguments.swiftconstvalues",
+    "dependencies" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/swift-argument-parser.build/Debug/ArgumentParser-t.build/Objects-normal/arm64/ParsableArguments.d",
+    "diagnostics" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/swift-argument-parser.build/Debug/ArgumentParser-t.build/Objects-normal/arm64/ParsableArguments.dia",
+    "object" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/swift-argument-parser.build/Debug/ArgumentParser-t.build/Objects-normal/arm64/ParsableArguments.o",
+    "swift-dependencies" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/swift-argument-parser.build/Debug/ArgumentParser-t.build/Objects-normal/arm64/ParsableArguments.swiftdeps"
+  }
+}

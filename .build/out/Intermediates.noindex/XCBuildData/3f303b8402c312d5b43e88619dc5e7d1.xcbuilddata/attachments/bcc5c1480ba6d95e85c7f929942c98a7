@@ -1,0 +1,49 @@
+{
+  "" : {
+    "diagnostics" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Debug/NativeStackAPIServer-t.build/Objects-normal/arm64/NativeStackAPIServer-primary.dia",
+    "emit-module-dependencies" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Debug/NativeStackAPIServer-t.build/Objects-normal/arm64/NativeStackAPIServer-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Debug/NativeStackAPIServer-t.build/Objects-normal/arm64/NativeStackAPIServer-primary-emit-module.dia",
+    "pch" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Debug/NativeStackAPIServer-t.build/Objects-normal/arm64/NativeStackAPIServer-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Debug/NativeStackAPIServer-t.build/Objects-normal/arm64/NativeStackAPIServer-primary.swiftdeps"
+  },
+  "/Users/shiberal/Desktop/cartella senza nome 4/Sources/NativeStackAPIServer/APIModels.swift" : {
+    "const-values" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Debug/NativeStackAPIServer-t.build/Objects-normal/arm64/APIModels.swiftconstvalues",
+    "dependencies" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Debug/NativeStackAPIServer-t.build/Objects-normal/arm64/APIModels.d",
+    "diagnostics" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Debug/NativeStackAPIServer-t.build/Objects-normal/arm64/APIModels.dia",
+    "index-unit-output-path" : "/NativeStackKit.build/Debug/NativeStackAPIServer-t.build/Objects-normal/arm64/APIModels.o",
+    "llvm-bc" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Debug/NativeStackAPIServer-t.build/Objects-normal/arm64/APIModels.bc",
+    "object" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Debug/NativeStackAPIServer-t.build/Objects-normal/arm64/APIModels.o",
+    "swift-dependencies" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Debug/NativeStackAPIServer-t.build/Objects-normal/arm64/APIModels.swiftdeps",
+    "swiftmodule" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Debug/NativeStackAPIServer-t.build/Objects-normal/arm64/APIModels~partial.swiftmodule"
+  },
+  "/Users/shiberal/Desktop/cartella senza nome 4/Sources/NativeStackAPIServer/APIRouter.swift" : {
+    "const-values" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Debug/NativeStackAPIServer-t.build/Objects-normal/arm64/APIRouter.swiftconstvalues",
+    "dependencies" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Debug/NativeStackAPIServer-t.build/Objects-normal/arm64/APIRouter.d",
+    "diagnostics" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Debug/NativeStackAPIServer-t.build/Objects-normal/arm64/APIRouter.dia",
+    "index-unit-output-path" : "/NativeStackKit.build/Debug/NativeStackAPIServer-t.build/Objects-normal/arm64/APIRouter.o",
+    "llvm-bc" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Debug/NativeStackAPIServer-t.build/Objects-normal/arm64/APIRouter.bc",
+    "object" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Debug/NativeStackAPIServer-t.build/Objects-normal/arm64/APIRouter.o",
+    "swift-dependencies" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Debug/NativeStackAPIServer-t.build/Objects-normal/arm64/APIRouter.swiftdeps",
+    "swiftmodule" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Debug/NativeStackAPIServer-t.build/Objects-normal/arm64/APIRouter~partial.swiftmodule"
+  },
+  "/Users/shiberal/Desktop/cartella senza nome 4/Sources/NativeStackAPIServer/APIServer.swift" : {
+    "const-values" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Debug/NativeStackAPIServer-t.build/Objects-normal/arm64/APIServer.swiftconstvalues",
+    "dependencies" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Debug/NativeStackAPIServer-t.build/Objects-normal/arm64/APIServer.d",
+    "diagnostics" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Debug/NativeStackAPIServer-t.build/Objects-normal/arm64/APIServer.dia",
+    "index-unit-output-path" : "/NativeStackKit.build/Debug/NativeStackAPIServer-t.build/Objects-normal/arm64/APIServer.o",
+    "llvm-bc" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Debug/NativeStackAPIServer-t.build/Objects-normal/arm64/APIServer.bc",
+    "object" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Debug/NativeStackAPIServer-t.build/Objects-normal/arm64/APIServer.o",
+    "swift-dependencies" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Debug/NativeStackAPIServer-t.build/Objects-normal/arm64/APIServer.swiftdeps",
+    "swiftmodule" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Debug/NativeStackAPIServer-t.build/Objects-normal/arm64/APIServer~partial.swiftmodule"
+  },
+  "/Users/shiberal/Desktop/cartella senza nome 4/Sources/NativeStackAPIServer/HTTP.swift" : {
+    "const-values" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Debug/NativeStackAPIServer-t.build/Objects-normal/arm64/HTTP.swiftconstvalues",
+    "dependencies" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Debug/NativeStackAPIServer-t.build/Objects-normal/arm64/HTTP.d",
+    "diagnostics" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Debug/NativeStackAPIServer-t.build/Objects-normal/arm64/HTTP.dia",
+    "index-unit-output-path" : "/NativeStackKit.build/Debug/NativeStackAPIServer-t.build/Objects-normal/arm64/HTTP.o",
+    "llvm-bc" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Debug/NativeStackAPIServer-t.build/Objects-normal/arm64/HTTP.bc",
+    "object" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Debug/NativeStackAPIServer-t.build/Objects-normal/arm64/HTTP.o",
+    "swift-dependencies" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Debug/NativeStackAPIServer-t.build/Objects-normal/arm64/HTTP.swiftdeps",
+    "swiftmodule" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Debug/NativeStackAPIServer-t.build/Objects-normal/arm64/HTTP~partial.swiftmodule"
+  }
+}

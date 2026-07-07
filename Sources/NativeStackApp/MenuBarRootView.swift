@@ -5,6 +5,7 @@ import NativeStackCore
 struct MenuBarRootView: View {
     @Environment(ContainerService.self) private var service
     @Environment(\.openWindow) private var openWindow
+    @AppStorage("autoRefresh") private var autoRefresh = true
 
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
@@ -16,7 +17,8 @@ struct MenuBarRootView: View {
         }
         .frame(width: 320)
         .task { await service.refresh(all: true) }
-        .onReceive(Timer.publish(every: 5, on: .main, in: .common).autoconnect()) { _ in
+        .onReceive(Timer.publish(every: 10, on: .main, in: .common).autoconnect()) { _ in
+            guard autoRefresh else { return }
             Task { await service.refresh(all: false) }
         }
     }
@@ -37,13 +39,16 @@ struct MenuBarRootView: View {
     }
 
     private var statusText: String {
+        if !service.isInstalled {
+            return "container CLI not installed"
+        }
         switch service.systemStatus.engineState {
         case .running:
             return "\(service.systemStatus.runningContainers) running"
         case .stopped:
             return "Engine stopped"
         case .notInstalled:
-            return "container CLI not installed"
+            return "Checking installation…"
         case .starting:
             return "Starting…"
         case .error:
@@ -54,12 +59,20 @@ struct MenuBarRootView: View {
     @ViewBuilder
     private var containerSection: some View {
         if service.containers.isEmpty {
-            ContentUnavailableView(
-                "No containers",
-                systemImage: "shippingbox",
-                description: Text("Pull an image and run a container to get started.")
-            )
-            .frame(height: 180)
+            VStack(spacing: 8) {
+                Image(systemName: "shippingbox")
+                    .font(.title)
+                    .foregroundStyle(.secondary)
+                Text("No containers")
+                    .font(.headline)
+                Text("Pull an image and run a container to get started.")
+                    .font(.caption)
+                    .foregroundStyle(.secondary)
+                    .multilineTextAlignment(.center)
+            }
+            .frame(maxWidth: .infinity)
+            .frame(height: 140)
+            .padding(.horizontal)
         } else {
             ScrollView {
                 LazyVStack(spacing: 0) {
@@ -80,6 +93,20 @@ struct MenuBarRootView: View {
                     Task { try? await service.startEngine() }
                 }
                 .buttonStyle(.borderedProminent)
+            }
+
+            if !service.isInstalled {
+                if service.isInstallingToolkit {
+                    HStack {
+                        ProgressView().controlSize(.small)
+                        Text(service.installPhase.label)
+                            .font(.caption)
+                    }
+                } else {
+                    Button("Install Container Toolkit") {
+                        Task { try? await service.installToolkit() }
+                    }
+                }
             }
 
             Button("Open Dashboard") {

@@ -1,0 +1,86 @@
+{
+  "" : {
+    "const-values" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/NativeStackClient-t.build/Objects-normal/arm64/NativeStackClient-primary.swiftconstvalues",
+    "dependencies" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/NativeStackClient-t.build/Objects-normal/arm64/NativeStackClient-primary.d",
+    "diagnostics" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/NativeStackClient-t.build/Objects-normal/arm64/NativeStackClient-primary.dia",
+    "emit-module-dependencies" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/NativeStackClient-t.build/Objects-normal/arm64/NativeStackClient-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/NativeStackClient-t.build/Objects-normal/arm64/NativeStackClient-primary-emit-module.dia",
+    "pch" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/NativeStackClient-t.build/Objects-normal/arm64/NativeStackClient-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/NativeStackClient-t.build/Objects-normal/arm64/NativeStackClient-primary.swiftdeps"
+  },
+  "/Users/shiberal/Desktop/cartella senza nome 4/Sources/NativeStackClient/ActivityStatsLoader.swift" : {
+    "index-unit-output-path" : "/NativeStackKit.build/Release/NativeStackClient-t.build/Objects-normal/arm64/ActivityStatsLoader.o",
+    "llvm-bc" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/NativeStackClient-t.build/Objects-normal/arm64/ActivityStatsLoader.bc",
+    "object" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/NativeStackClient-t.build/Objects-normal/arm64/ActivityStatsLoader.o"
+  },
+  "/Users/shiberal/Desktop/cartella senza nome 4/Sources/NativeStackClient/AppSettingsStore.swift" : {
+    "index-unit-output-path" : "/NativeStackKit.build/Release/NativeStackClient-t.build/Objects-normal/arm64/AppSettingsStore.o",
+    "llvm-bc" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/NativeStackClient-t.build/Objects-normal/arm64/AppSettingsStore.bc",
+    "object" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/NativeStackClient-t.build/Objects-normal/arm64/AppSettingsStore.o"
+  },
+  "/Users/shiberal/Desktop/cartella senza nome 4/Sources/NativeStackClient/ComposeHostsInjector.swift" : {
+    "index-unit-output-path" : "/NativeStackKit.build/Release/NativeStackClient-t.build/Objects-normal/arm64/ComposeHostsInjector.o",
+    "llvm-bc" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/NativeStackClient-t.build/Objects-normal/arm64/ComposeHostsInjector.bc",
+    "object" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/NativeStackClient-t.build/Objects-normal/arm64/ComposeHostsInjector.o"
+  },
+  "/Users/shiberal/Desktop/cartella senza nome 4/Sources/NativeStackClient/ComposeProjectSupport.swift" : {
+    "index-unit-output-path" : "/NativeStackKit.build/Release/NativeStackClient-t.build/Objects-normal/arm64/ComposeProjectSupport.o",
+    "llvm-bc" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/NativeStackClient-t.build/Objects-normal/arm64/ComposeProjectSupport.bc",
+    "object" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/NativeStackClient-t.build/Objects-normal/arm64/ComposeProjectSupport.o"
+  },
+  "/Users/shiberal/Desktop/cartella senza nome 4/Sources/NativeStackClient/ComposeStackService.swift" : {
+    "index-unit-output-path" : "/NativeStackKit.build/Release/NativeStackClient-t.build/Objects-normal/arm64/ComposeStackService.o",
+    "llvm-bc" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/NativeStackClient-t.build/Objects-normal/arm64/ComposeStackService.bc",
+    "object" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/NativeStackClient-t.build/Objects-normal/arm64/ComposeStackService.o"
+  },
+  "/Users/shiberal/Desktop/cartella senza nome 4/Sources/NativeStackClient/ContainerCLI.swift" : {
+    "index-unit-output-path" : "/NativeStackKit.build/Release/NativeStackClient-t.build/Objects-normal/arm64/ContainerCLI.o",
+    "llvm-bc" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/NativeStackClient-t.build/Objects-normal/arm64/ContainerCLI.bc",
+    "object" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/NativeStackClient-t.build/Objects-normal/arm64/ContainerCLI.o"
+  },
+  "/Users/shiberal/Desktop/cartella senza nome 4/Sources/NativeStackClient/ContainerCLIExec.swift" : {
+    "index-unit-output-path" : "/NativeStackKit.build/Release/NativeStackClient-t.build/Objects-normal/arm64/ContainerCLIExec.o",
+    "llvm-bc" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/NativeStackClient-t.build/Objects-normal/arm64/ContainerCLIExec.bc",
+    "object" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/NativeStackClient-t.build/Objects-normal/arm64/ContainerCLIExec.o"
+  },
+  "/Users/shiberal/Desktop/cartella senza nome 4/Sources/NativeStackClient/ContainerOutputParser.swift" : {
+    "index-unit-output-path" : "/NativeStackKit.build/Release/NativeStackClient-t.build/Objects-normal/arm64/ContainerOutputParser.o",
+    "llvm-bc" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/NativeStackClient-t.build/Objects-normal/arm64/ContainerOutputParser.bc",
+    "object" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/NativeStackClient-t.build/Objects-normal/arm64/ContainerOutputParser.o"
+  },
+  "/Users/shiberal/Desktop/cartella senza nome 4/Sources/NativeStackClient/ContainerService.swift" : {
+    "index-unit-output-path" : "/NativeStackKit.build/Release/NativeStackClient-t.build/Objects-normal/arm64/ContainerService.o",
+    "llvm-bc" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/NativeStackClient-t.build/Objects-normal/arm64/ContainerService.bc",
+    "object" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/NativeStackClient-t.build/Objects-normal/arm64/ContainerService.o"
+  },
+  "/Users/shiberal/Desktop/cartella senza nome 4/Sources/NativeStackClient/ContainerSnapshotLoader.swift" : {
+    "index-unit-output-path" : "/NativeStackKit.build/Release/NativeStackClient-t.build/Objects-normal/arm64/ContainerSnapshotLoader.o",
+    "llvm-bc" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/NativeStackClient-t.build/Objects-normal/arm64/ContainerSnapshotLoader.bc",
+    "object" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/NativeStackClient-t.build/Objects-normal/arm64/ContainerSnapshotLoader.o"
+  },
+  "/Users/shiberal/Desktop/cartella senza nome 4/Sources/NativeStackClient/ContainerToolkitInstaller.swift" : {
+    "index-unit-output-path" : "/NativeStackKit.build/Release/NativeStackClient-t.build/Objects-normal/arm64/ContainerToolkitInstaller.o",
+    "llvm-bc" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/NativeStackClient-t.build/Objects-normal/arm64/ContainerToolkitInstaller.bc",
+    "object" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/NativeStackClient-t.build/Objects-normal/arm64/ContainerToolkitInstaller.o"
+  },
+  "/Users/shiberal/Desktop/cartella senza nome 4/Sources/NativeStackClient/DockerCompatibilityService.swift" : {
+    "index-unit-output-path" : "/NativeStackKit.build/Release/NativeStackClient-t.build/Objects-normal/arm64/DockerCompatibilityService.o",
+    "llvm-bc" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/NativeStackClient-t.build/Objects-normal/arm64/DockerCompatibilityService.bc",
+    "object" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/NativeStackClient-t.build/Objects-normal/arm64/DockerCompatibilityService.o"
+  },
+  "/Users/shiberal/Desktop/cartella senza nome 4/Sources/NativeStackClient/DockerResourceService.swift" : {
+    "index-unit-output-path" : "/NativeStackKit.build/Release/NativeStackClient-t.build/Objects-normal/arm64/DockerResourceService.o",
+    "llvm-bc" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/NativeStackClient-t.build/Objects-normal/arm64/DockerResourceService.bc",
+    "object" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/NativeStackClient-t.build/Objects-normal/arm64/DockerResourceService.o"
+  },
+  "/Users/shiberal/Desktop/cartella senza nome 4/Sources/NativeStackClient/ExternalCommandRunner.swift" : {
+    "index-unit-output-path" : "/NativeStackKit.build/Release/NativeStackClient-t.build/Objects-normal/arm64/ExternalCommandRunner.o",
+    "llvm-bc" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/NativeStackClient-t.build/Objects-normal/arm64/ExternalCommandRunner.bc",
+    "object" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/NativeStackClient-t.build/Objects-normal/arm64/ExternalCommandRunner.o"
+  },
+  "/Users/shiberal/Desktop/cartella senza nome 4/Sources/NativeStackClient/PipeDrainer.swift" : {
+    "index-unit-output-path" : "/NativeStackKit.build/Release/NativeStackClient-t.build/Objects-normal/arm64/PipeDrainer.o",
+    "llvm-bc" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/NativeStackClient-t.build/Objects-normal/arm64/PipeDrainer.bc",
+    "object" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/NativeStackClient-t.build/Objects-normal/arm64/PipeDrainer.o"
+  }
+}

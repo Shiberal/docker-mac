@@ -32,6 +32,10 @@ struct OnboardingView: View {
                     Button("Back") { step -= 1 }
                 }
                 Spacer()
+                if step < 2 {
+                    Button("Skip") { onComplete() }
+                        .foregroundStyle(.secondary)
+                }
                 Button(step < 2 ? "Continue" : "Get Started") {
                     if step < 2 {
                         step += 1
@@ -48,6 +52,12 @@ struct OnboardingView: View {
         }
         .padding(40)
         .task { await service.checkInstallation() }
+    }
+
+    private var installDetail: String {
+        if service.isInstalled { return "Found on PATH" }
+        if service.isInstallingToolkit { return service.installPhase.label }
+        return "Will install automatically via Homebrew or Apple installer"
     }
 
     @ViewBuilder
@@ -77,14 +87,24 @@ struct OnboardingView: View {
                 prerequisiteRow(
                     title: "container CLI",
                     ok: service.isInstalled,
-                    detail: service.isInstalled
-                        ? "Found at system PATH"
-                        : "Install from github.com/apple/container/releases"
+                    detail: installDetail
                 )
 
-                if !service.isInstalled {
-                    Link("Download Apple container", destination: URL(string: "https://github.com/apple/container/releases")!)
-                        .padding(.top, 4)
+                if service.isInstallingToolkit {
+                    HStack(spacing: 8) {
+                        ProgressView().controlSize(.small)
+                        Text(service.installPhase.label)
+                            .font(.caption)
+                            .foregroundStyle(.secondary)
+                    }
+                } else if !service.isInstalled {
+                    Button("Install Automatically") {
+                        Task { try? await service.installToolkit() }
+                    }
+                    .buttonStyle(.borderedProminent)
+
+                    Link("Manual download", destination: URL(string: "https://github.com/apple/container/releases")!)
+                        .font(.caption)
                 }
             }
         default:

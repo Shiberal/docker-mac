@@ -4,6 +4,7 @@ import NativeStackCore
 
 struct MainWindowView: View {
     @Environment(ContainerService.self) private var service
+    @AppStorage("autoRefresh") private var autoRefresh = true
     @State private var selection: SidebarSection? = .containers
     @State private var selectedContainerID: ContainerRecord.ID?
     @State private var selectedImageID: ImageRecord.ID?
@@ -22,11 +23,13 @@ struct MainWindowView: View {
             inspectorColumn
         }
         .navigationSplitViewStyle(.balanced)
+        .allowsWindowActivationEvents(true)
         .toolbar { mainToolbar }
         .searchable(text: $searchText, prompt: "Search")
         .sheet(isPresented: $showPullSheet) { pullImageSheet }
         .task { await service.refresh(all: true) }
-        .onReceive(Timer.publish(every: 4, on: .main, in: .common).autoconnect()) { _ in
+        .onReceive(Timer.publish(every: 10, on: .main, in: .common).autoconnect()) { _ in
+            guard autoRefresh else { return }
             Task { await service.refresh(all: showAllContainers) }
         }
     }
@@ -144,12 +147,10 @@ struct MainWindowView: View {
     }
 }
 
-enum SidebarSection: String, CaseIterable, Identifiable {
+enum SidebarSection: String, CaseIterable, Hashable {
     case containers = "Containers"
     case images = "Images"
     case activity = "Activity"
-
-    var id: String { rawValue }
 
     var icon: String {
         switch self {
@@ -172,10 +173,11 @@ struct SidebarView: View {
     @Binding var selection: SidebarSection?
 
     var body: some View {
-        List(SidebarSection.allCases, selection: $selection) { section in
+        List(SidebarSection.allCases, id: \.self, selection: $selection) { section in
             Label(section.rawValue, systemImage: section.icon)
         }
         .navigationTitle("NativeStack")
         .listStyle(.sidebar)
+        .allowsWindowActivationEvents(true)
     }
 }
