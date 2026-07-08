@@ -4,8 +4,8 @@ class Nativestack < Formula
   license "Apache-2.0"
   version "0.2.0"
 
-  # Prefer the monorepo checkout when this formula lives in Formula/nativestack.rb.
-  # Falls back to the GitHub release tarball for remote tap installs.
+  # Monorepo tap: build from the tap checkout via local git.
+  # Remote tap: falls back to the GitHub release tarball.
   monorepo = File.expand_path("..", __dir__)
   if File.exist?(File.join(monorepo, "Package.swift"))
     url "file://#{monorepo}", using: :git, branch: "main"
@@ -29,9 +29,10 @@ class Nativestack < Formula
 
     ENV["MACOSX_DEPLOYMENT_TARGET"] = MacOS.version.to_s
 
-    Dir.chdir(source_root) do
+    cd project_root do
       system "swift", "build",
              "-c", "release",
+             "--disable-sandbox",
              "--product", "nativestack",
              "-j", ENV.make_jobs
       bin.install ".build/release/nativestack"
@@ -59,11 +60,14 @@ class Nativestack < Formula
 
   private
 
-  def source_root
-    if tap&.path&.join("Package.swift")&.exist?
-      tap.path
-    else
-      buildpath
-    end
+  # Always build inside Homebrew's buildpath — never in the tap checkout.
+  def project_root
+    return buildpath if (buildpath/"Package.swift").exist?
+
+    # GitHub archive tarballs extract into nativestack-<version>/.
+    candidates = buildpath.children.select { |path| (path/"Package.swift").exist? }
+    odie "Could not find Package.swift under #{buildpath}" if candidates.empty?
+
+    candidates.first
   end
 end

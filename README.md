@@ -134,6 +134,16 @@ brew tap nativestack/tap "$(pwd)"
 brew install --build-from-source nativestack/tap/nativestack
 ```
 
+If a previous install failed, remove the stale build artifacts from the tap checkout and retry:
+
+```bash
+brew uninstall nativestack 2>/dev/null || true
+rm -rf "$(brew --repository)/Library/Taps/nativestack/homebrew-tap/.build"
+brew untap nativestack/tap
+brew tap nativestack/tap "$(pwd)"
+brew install --build-from-source nativestack/tap/nativestack
+```
+
 The formula builds the `nativestack` CLI from source on your machine (Swift ABI). After install:
 
 ```bash
