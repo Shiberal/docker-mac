@@ -14,3 +14,4 @@ gui/.bundle/
 
 # Local Homebrew test artifacts
 *.brewing
+gui
