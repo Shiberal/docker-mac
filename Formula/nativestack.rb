@@ -35,13 +35,12 @@ class Nativestack < Formula
     odie "NativeStack requires Apple Silicon (arm64)." unless Hardware::CPU.arm?
 
     ENV["MACOSX_DEPLOYMENT_TARGET"] = MacOS.version.to_s
-
     dep = resource("swift-argument-parser")
-    (buildpath/"swift-argument-parser").install dep
 
     cd project_root do
-      system "swift", "package", "--disable-sandbox", "edit",
-             "swift-argument-parser", "--path", buildpath/"swift-argument-parser"
+      checkout = Pathname(".build/checkouts/swift-argument-parser")
+      checkout.parent.mkpath
+      dep.stage checkout
 
       system "swift", "build",
              "-c", "release",
