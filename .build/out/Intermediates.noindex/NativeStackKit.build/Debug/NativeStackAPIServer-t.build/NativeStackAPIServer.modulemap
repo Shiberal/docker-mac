@@ -1,4 +1,0 @@
-module NativeStackAPIServer {
-header "NativeStackAPIServer-Swift.h"
-export *
-}
