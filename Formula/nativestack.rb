@@ -34,10 +34,12 @@ class Nativestack < Formula
   def install
     odie "NativeStack requires Apple Silicon (arm64)." unless Hardware::CPU.arm?
 
-    ENV["MACOSX_DEPLOYMENT_TARGET"] = MacOS.version.to_s
+    ENV["MACOSX_DEPLOYMENT_TARGET"] = "27"
     dep = resource("swift-argument-parser")
 
     cd project_root do
+      Pathname(".build").rmtree if Pathname(".build").exist?
+
       checkout = Pathname(".build/checkouts/swift-argument-parser")
       checkout.parent.mkpath
       dep.stage checkout
@@ -45,8 +47,7 @@ class Nativestack < Formula
       system "swift", "build",
              "-c", "release",
              "--disable-sandbox",
-             "--product", "nativestack",
-             "-j", ENV.make_jobs
+             "--product", "nativestack"
       bin.install ".build/release/nativestack"
     end
   end
