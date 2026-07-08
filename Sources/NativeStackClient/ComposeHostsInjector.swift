@@ -14,11 +14,6 @@ enum ComposeHostsInjector {
         "volumes", "wait", "watch",
     ]
 
-    private static let hostEnvironmentKeys: Set<String> = [
-        "MYSQL_HOST", "POSTGRES_HOST", "DATABASE_HOST", "DB_HOST", "REDIS_HOST",
-        "MONGO_HOST", "MARIADB_HOST", "RABBITMQ_HOST", "MEMCACHED_HOST", "HOST",
-    ]
-
     static func shouldInject(arguments: [String]) -> Bool {
         guard DockerCompatibilityConfiguration.composeHostsInjectionEnabled else { return false }
         let split = splitComposeArguments(arguments)
@@ -140,7 +135,7 @@ enum ComposeHostsInjector {
             projectName: plan.projectName
         )
 
-        let ipMap = try await lookupServiceIPs(
+        let ipMap = try await lookupServiceIPsWithRetry(
             dockerExecutable: dockerExecutable,
             environment: environment,
             projectName: plan.projectName,
@@ -380,26 +375,25 @@ enum ComposeHostsInjector {
     }
 
     private static func buildInjectionPlan(from config: ComposeConfig) -> InjectionPlan {
-        let serviceNames = Set(config.services.keys)
+        let serviceNames = config.services.keys.sorted()
         var entries: [InjectionEntry] = []
 
-        for (consumer, service) in config.services {
-            let targets = referencedServices(
-                consumer: consumer,
-                service: service,
-                allServices: serviceNames
-            )
-            for target in targets.sorted() {
-                guard config.services[target] != nil else { continue }
-                let hasPorts = !(config.services[target]?.publishedPorts.isEmpty ?? true)
-                entries.append(
-                    InjectionEntry(
-                        consumerService: consumer,
-                        targetService: target,
-                        hostValue: "",
-                        targetHasPublishedPorts: hasPorts
+        // Mirror Docker Compose embedded DNS: every service can resolve every peer
+        // service name (and explicit container_name aliases) in the project.
+        for consumer in serviceNames {
+            for target in serviceNames where target != consumer {
+                guard let targetService = config.services[target] else { continue }
+                let hasPorts = !targetService.publishedPorts.isEmpty
+                for hostname in hostnames(for: target, service: targetService) {
+                    entries.append(
+                        InjectionEntry(
+                            consumerService: consumer,
+                            targetService: hostname,
+                            hostValue: "",
+                            targetHasPublishedPorts: hasPorts
+                        )
                     )
-                )
+                }
             }
         }
 
@@ -410,36 +404,14 @@ enum ComposeHostsInjector {
         )
     }
 
-    private static func referencedServices(
-        consumer: String,
-        service: ComposeService,
-        allServices: Set<String>
-    ) -> Set<String> {
-        var targets = Set<String>()
-
-        for dependency in service.dependsOn where allServices.contains(dependency) {
-            targets.insert(dependency)
+    private static func hostnames(for serviceName: String, service: ComposeService) -> [String] {
+        var names = [serviceName]
+        if let containerName = service.containerName,
+           !containerName.isEmpty,
+           containerName != serviceName {
+            names.append(containerName)
         }
-
-        for (key, value) in service.environment {
-            if allServices.contains(value), value != consumer {
-                targets.insert(value)
-            }
-            if hostEnvironmentKeys.contains(key), allServices.contains(value), value != consumer {
-                targets.insert(value)
-            }
-            if let host = hostnameFromURL(value), allServices.contains(host), host != consumer {
-                targets.insert(host)
-            }
-        }
-
-        return targets
-    }
-
-    private static func hostnameFromURL(_ value: String) -> String? {
-        guard value.contains("://") else { return nil }
-        guard let url = URL(string: value), let host = url.host, !host.isEmpty else { return nil }
-        return host
+        return names
     }
 
     private static func deduplicated(_ entries: [InjectionEntry]) -> [InjectionEntry] {
@@ -543,6 +515,38 @@ enum ComposeHostsInjector {
         )
     }
 
+    private static func lookupServiceIPsWithRetry(
+        dockerExecutable: String,
+        environment: [String: String],
+        projectName: String,
+        services: [String: ComposeService]
+    ) async throws -> [String: String] {
+        let expectedCount = services.count
+        let maxAttempts = 12
+
+        for attempt in 0..<maxAttempts {
+            let ipMap = try await lookupServiceIPs(
+                dockerExecutable: dockerExecutable,
+                environment: environment,
+                projectName: projectName,
+                services: services
+            )
+            if ipMap.count >= expectedCount || (expectedCount <= 1 && !ipMap.isEmpty) {
+                return ipMap
+            }
+            if attempt + 1 < maxAttempts {
+                try await Task.sleep(nanoseconds: 500_000_000)
+            }
+        }
+
+        return try await lookupServiceIPs(
+            dockerExecutable: dockerExecutable,
+            environment: environment,
+            projectName: projectName,
+            services: services
+        )
+    }
+
     private static func lookupServiceIPs(
         dockerExecutable: String,
         environment: [String: String],
@@ -550,6 +554,79 @@ enum ComposeHostsInjector {
         services: [String: ComposeService]
     ) async throws -> [String: String] {
         let networkName = "\(projectName)_default"
+        let psArgs = [
+            "ps", "-q",
+            "--filter", "label=com.docker.compose.project=\(projectName)",
+        ]
+        let psResult = try await ExternalCommandRunner.run(
+            executable: dockerExecutable,
+            arguments: psArgs,
+            environment: environment
+        )
+
+        var serviceIPs: [String: String] = [:]
+        if psResult.exitCode == 0 {
+            let ids = psResult.stdout
+                .split(whereSeparator: \.isNewline)
+                .map { String($0).trimmingCharacters(in: .whitespacesAndNewlines) }
+                .filter { !$0.isEmpty }
+
+            for id in ids {
+                let inspectArgs = ["inspect", id, "--format", "{{json .}}"]
+                let inspectResult = try await ExternalCommandRunner.run(
+                    executable: dockerExecutable,
+                    arguments: inspectArgs,
+                    environment: environment
+                )
+                guard inspectResult.exitCode == 0,
+                      let data = inspectResult.stdout.data(using: .utf8),
+                      let root = try JSONSerialization.jsonObject(with: data) as? [String: Any],
+                      let ip = ipAddress(
+                          from: root["NetworkSettings"] as? [String: Any],
+                          preferredNetwork: networkName
+                      ) else {
+                    continue
+                }
+
+                let config = root["Config"] as? [String: Any]
+                let labels = config?["Labels"] as? [String: String] ?? [:]
+                if let composeService = labels["com.docker.compose.service"], !composeService.isEmpty {
+                    serviceIPs[composeService] = ip
+                }
+                if let containerName = (root["Name"] as? String)?
+                    .trimmingCharacters(in: CharacterSet(charactersIn: "/")),
+                   !containerName.isEmpty {
+                    serviceIPs[containerName] = ip
+                }
+            }
+        }
+
+        for (serviceName, service) in services where serviceIPs[serviceName] == nil {
+            if let containerName = service.containerName, let ip = serviceIPs[containerName] {
+                serviceIPs[serviceName] = ip
+            }
+        }
+
+        if !serviceIPs.isEmpty {
+            return serviceIPs
+        }
+
+        return try await lookupServiceIPsFromNetworkInspect(
+            dockerExecutable: dockerExecutable,
+            environment: environment,
+            projectName: projectName,
+            networkName: networkName,
+            services: services
+        )
+    }
+
+    private static func lookupServiceIPsFromNetworkInspect(
+        dockerExecutable: String,
+        environment: [String: String],
+        projectName: String,
+        networkName: String,
+        services: [String: ComposeService]
+    ) async throws -> [String: String] {
         let args = ["network", "inspect", networkName, "--format", "{{json .}}"]
         let result = try await ExternalCommandRunner.run(
             executable: dockerExecutable,
@@ -564,20 +641,42 @@ enum ComposeHostsInjector {
         }
 
         var containerIPs: [String: String] = [:]
-        for (name, value) in containers {
+        for (_, value) in containers {
             guard let endpoint = value as? [String: Any],
                   let address = endpoint["IPv4Address"] as? String else { continue }
             let ip = address.split(separator: "/").first.map(String.init) ?? address
-            containerIPs[name] = ip
+            if let name = endpoint["Name"] as? String, !name.isEmpty {
+                containerIPs[name] = ip
+            }
         }
 
+        let labelArgs = [
+            "ps", "-a",
+            "--filter", "label=com.docker.compose.project=\(projectName)",
+            "--format", "{{.Names}}\t{{.Label \"com.docker.compose.service\"}}",
+        ]
+        let labelResult = try await ExternalCommandRunner.run(
+            executable: dockerExecutable,
+            arguments: labelArgs,
+            environment: environment
+        )
+
         var serviceIPs: [String: String] = [:]
-        for (serviceName, service) in services {
-            if let containerName = service.containerName, let ip = containerIPs[containerName] {
-                serviceIPs[serviceName] = ip
-                continue
+        if labelResult.exitCode == 0 {
+            for line in labelResult.stdout.split(whereSeparator: \.isNewline) {
+                let parts = String(line).split(separator: "\t", maxSplits: 1).map(String.init)
+                guard parts.count == 2 else { continue }
+                let containerName = parts[0].trimmingCharacters(in: .whitespacesAndNewlines)
+                let composeService = parts[1].trimmingCharacters(in: .whitespacesAndNewlines)
+                guard !containerName.isEmpty, !composeService.isEmpty,
+                      let ip = containerIPs[containerName] else { continue }
+                serviceIPs[composeService] = ip
+                serviceIPs[containerName] = ip
             }
-            if let ip = containerIPs[serviceName] {
+        }
+
+        for (serviceName, service) in services where serviceIPs[serviceName] == nil {
+            if let containerName = service.containerName, let ip = serviceIPs[containerName] ?? containerIPs[serviceName] {
                 serviceIPs[serviceName] = ip
                 continue
             }
@@ -586,6 +685,25 @@ enum ComposeHostsInjector {
             }
         }
         return serviceIPs
+    }
+
+    private static func ipAddress(
+        from networkSettings: [String: Any]?,
+        preferredNetwork: String
+    ) -> String? {
+        guard let networks = networkSettings?["Networks"] as? [String: [String: Any]] else {
+            return nil
+        }
+        if let endpoint = networks[preferredNetwork],
+           let ip = endpoint["IPAddress"] as? String,
+           !ip.isEmpty {
+            return ip
+        }
+        for (_, endpoint) in networks {
+            guard let ip = endpoint["IPAddress"] as? String, !ip.isEmpty else { continue }
+            return ip
+        }
+        return nil
     }
 
     // MARK: - Override file

@@ -10,6 +10,7 @@ public enum NativeStackError: LocalizedError, Sendable {
     case installRequiresAdmin
     case brewRequired
     case dockerCompatibilityUnavailable(reason: String)
+    case notFound(context: String)
 
     public var errorDescription: String? {
         switch self {
@@ -34,6 +35,8 @@ public enum NativeStackError: LocalizedError, Sendable {
             return "Homebrew is required to install Socktainer and Docker compatibility tools."
         case let .dockerCompatibilityUnavailable(reason):
             return reason
+        case let .notFound(context):
+            return "\(context) not found."
         }
     }
 }

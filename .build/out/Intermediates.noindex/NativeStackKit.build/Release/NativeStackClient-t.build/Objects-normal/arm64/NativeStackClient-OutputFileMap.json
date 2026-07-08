@@ -18,6 +18,11 @@
     "llvm-bc" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/NativeStackClient-t.build/Objects-normal/arm64/AppSettingsStore.bc",
     "object" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/NativeStackClient-t.build/Objects-normal/arm64/AppSettingsStore.o"
   },
+  "/Users/shiberal/Desktop/cartella senza nome 4/Sources/NativeStackClient/AutoStartStore.swift" : {
+    "index-unit-output-path" : "/NativeStackKit.build/Release/NativeStackClient-t.build/Objects-normal/arm64/AutoStartStore.o",
+    "llvm-bc" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/NativeStackClient-t.build/Objects-normal/arm64/AutoStartStore.bc",
+    "object" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/NativeStackClient-t.build/Objects-normal/arm64/AutoStartStore.o"
+  },
   "/Users/shiberal/Desktop/cartella senza nome 4/Sources/NativeStackClient/ComposeHostsInjector.swift" : {
     "index-unit-output-path" : "/NativeStackKit.build/Release/NativeStackClient-t.build/Objects-normal/arm64/ComposeHostsInjector.o",
     "llvm-bc" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/NativeStackClient-t.build/Objects-normal/arm64/ComposeHostsInjector.bc",

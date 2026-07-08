@@ -23,6 +23,15 @@ public final class ContainerService {
     public private(set) var isInstallingToolkit = false
 
     public var autoInstallToolkit: Bool
+    private var hasReconciledAutoStart = false
+
+    /// Called when a container that was running is no longer running and NativeStack
+    /// didn't ask for it to stop (i.e. it stopped on its own — the closest signal to
+    /// "crashed" that Apple's `container` CLI exposes today, since it doesn't report
+    /// exit codes). Set from the app layer to post a user notification.
+    public var onContainerStoppedUnexpectedly: (@MainActor (ContainerRecord) -> Void)?
+    private var previouslyRunning: [String: ContainerRecord] = [:]
+    private var intentionalStops: Set<String> = []
 
     public init(cli: ContainerCLI = ContainerCLI(), autoInstallToolkit: Bool = true) {
         self.cli = cli
@@ -88,12 +97,56 @@ public final class ContainerService {
         }
 
         systemStatus = snapshot.systemStatus
-        containers = snapshot.containers
+        let autoStartNames = AutoStartStore.load()
+        containers = snapshot.containers.map { container in
+            var container = container
+            container.autoStart = autoStartNames.contains(container.displayName)
+            return container
+        }
         images = snapshot.images
         volumes = snapshot.volumes
         networks = snapshot.networks
         composeProjects = snapshot.composeProjects
         lastError = snapshot.error
+
+        detectUnexpectedStops()
+        await reconcileAutoStartIfNeeded()
+    }
+
+    private func detectUnexpectedStops() {
+        let currentlyRunning = containers.filter(\.state.isActive)
+        let currentlyRunningIDs = Set(currentlyRunning.map(\.id))
+
+        for (id, container) in previouslyRunning where !currentlyRunningIDs.contains(id) {
+            if intentionalStops.remove(id) == nil {
+                onContainerStoppedUnexpectedly?(container)
+            }
+        }
+
+        previouslyRunning = Dictionary(uniqueKeysWithValues: currentlyRunning.map { ($0.id, $0) })
+    }
+
+    public func setAutoStart(_ enabled: Bool, forContainerNamed name: String) {
+        AutoStartStore.setEnabled(enabled, for: name)
+        if let index = containers.firstIndex(where: { $0.displayName == name }) {
+            containers[index].autoStart = enabled
+        }
+    }
+
+    /// Starts any container marked for auto-start that is currently stopped.
+    /// Runs only once per app launch so a container the user deliberately
+    /// stopped isn't force-restarted on the next background refresh.
+    private func reconcileAutoStartIfNeeded() async {
+        guard !hasReconciledAutoStart else { return }
+        hasReconciledAutoStart = true
+
+        let pending = containers.filter { $0.autoStart && !$0.state.isActive }
+        guard !pending.isEmpty else { return }
+        for container in pending {
+            try? await cli.runOrThrow(["start", container.id])
+        }
+        // `refresh()` is already in flight (isRefreshing == true) here, so the
+        // updated running state surfaces on the next periodic/manual refresh.
     }
 
     public func startEngine() async throws {
@@ -115,11 +168,13 @@ public final class ContainerService {
     }
 
     public func stopContainer(id: String) async throws {
+        intentionalStops.insert(id)
         _ = try await cli.runOrThrow(["stop", id])
         await refresh(all: true)
     }
 
     public func removeContainer(id: String, force: Bool = false) async throws {
+        intentionalStops.insert(id)
         var args = ["rm"]
         if force { args.append("-f") }
         args.append(id)
@@ -128,6 +183,7 @@ public final class ContainerService {
     }
 
     public func restartContainer(id: String) async throws {
+        intentionalStops.insert(id)
         _ = try? await cli.runOrThrow(["stop", id])
         _ = try await cli.runOrThrow(["start", id])
         await refresh(all: true)
@@ -141,6 +197,7 @@ public final class ContainerService {
     }
 
     public func batchStopContainers(ids: [String]) async throws {
+        intentionalStops.formUnion(ids)
         for id in ids {
             try? await cli.runOrThrow(["stop", id])
         }
@@ -148,6 +205,7 @@ public final class ContainerService {
     }
 
     public func batchRemoveContainers(ids: [String], force: Bool = true) async throws {
+        intentionalStops.formUnion(ids)
         for id in ids {
             var args = ["rm"]
             if force { args.append("-f") }
@@ -214,6 +272,33 @@ public final class ContainerService {
         AppSettingsStore.dataDirectoryURL.path
     }
 
+    public var containerBinaryPath: String {
+        cli.resolvedBinaryPath()
+    }
+
+    public func composeProjectPath(forProject projectName: String) -> String? {
+        ComposeProjectSupport.workingDirectory(forProject: projectName)
+    }
+
+    public func readComposeEnv(forProject projectName: String) throws -> String {
+        guard let directory = composeProjectPath(forProject: projectName) else {
+            throw NativeStackError.notFound(context: "Compose project '\(projectName)'")
+        }
+        let path = (directory as NSString).appendingPathComponent(".env")
+        guard FileManager.default.fileExists(atPath: path) else {
+            return ""
+        }
+        return try String(contentsOfFile: path, encoding: .utf8)
+    }
+
+    public func writeComposeEnv(forProject projectName: String, contents: String) throws {
+        guard let directory = composeProjectPath(forProject: projectName) else {
+            throw NativeStackError.notFound(context: "Compose project '\(projectName)'")
+        }
+        let path = (directory as NSString).appendingPathComponent(".env")
+        try contents.write(toFile: path, atomically: true, encoding: .utf8)
+    }
+
     public func openPathHint(for container: ContainerRecord) -> String {
         let name = container.displayName
         return "\(filesBasePath)/containers/\(name)"
@@ -270,8 +355,21 @@ public final class ContainerService {
         )
     }
 
+    /// Replaces the current process with an interactive `container exec` session,
+    /// same as `docker exec -it`. Never returns on success. Only allocates a TTY
+    /// (`-t`) when stdin actually is one — forcing it when piped/scripted makes
+    /// Apple's container tool fail with "Operation not supported by device".
+    public func execInteractive(id: String, command: [String]) throws -> Never {
+        let shellCommand = command.isEmpty ? ["sh"] : command
+        var args = ["exec", "-i"]
+        if ContainerCLIExec.isStandardInputTTY() {
+            args.append("-t")
+        }
+        try ContainerCLIExec.exec(arguments: args + [id] + shellCommand)
+    }
+
     public func logs(for id: String, tail: Int = 200) async throws -> String {
-        try await cli.runOrThrow(["logs", "--tail", String(tail), id])
+        try await cli.runOrThrow(["logs", "-n", String(tail), id])
     }
 
     public func runQuick(
@@ -327,20 +425,16 @@ public final class ContainerService {
         await refresh(all: true)
     }
 
-    public func streamLogs(for id: String) -> AsyncStream<LogLine> {
-        AsyncStream { continuation in
-            Task {
-                do {
-                    let result = try await cli.run(["logs", "-f", "--tail", "100", id])
-                    let text = result.stdout + result.stderr
-                    for line in text.split(separator: "\n", omittingEmptySubsequences: false) {
-                        continuation.yield(LogLine(text: String(line)))
-                    }
-                } catch {
-                    continuation.yield(LogLine(text: "Error: \(error.localizedDescription)"))
+    public func streamLogs(for id: String) async -> AsyncStream<LogLine> {
+        let lines = await cli.stream(["logs", "-f", "-n", "100", id])
+        return AsyncStream { continuation in
+            let task = Task {
+                for await line in lines {
+                    continuation.yield(LogLine(text: line))
                 }
                 continuation.finish()
             }
+            continuation.onTermination = { _ in task.cancel() }
         }
     }
 

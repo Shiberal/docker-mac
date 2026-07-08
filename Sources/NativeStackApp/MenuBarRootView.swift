@@ -153,6 +153,24 @@ struct MenuBarContainerRow: View {
                     NSPasteboard.general.setString(container.id, forType: .string)
                 }
                 Divider()
+                if container.state.isActive {
+                    Button("Open Shell") {
+                        MenuBarQuickActions.openShell(
+                            for: container,
+                            binaryPath: service.containerBinaryPath
+                        )
+                    }
+                }
+                if let project = container.composeProject,
+                   let path = service.composeProjectPath(forProject: project) {
+                    Button("Copy Compose Project Path") {
+                        MenuBarQuickActions.copyComposeProjectPath(path)
+                    }
+                }
+                Button("Reveal Logs in Console") {
+                    MenuBarQuickActions.revealLogsInConsole(for: container, service: service)
+                }
+                Divider()
                 Button("Remove", role: .destructive) {
                     Task { try? await service.removeContainer(id: container.id, force: true) }
                 }

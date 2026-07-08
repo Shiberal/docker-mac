@@ -59,6 +59,47 @@ enum DockerResourceService {
         return enriched
     }
 
+    static func enrichVolumes(_ volumes: [VolumeRecord]) async -> [VolumeRecord] {
+        guard await canQueryDocker(), !volumes.isEmpty else {
+            return volumes
+        }
+
+        var enriched = volumes
+        for index in enriched.indices {
+            guard let mountpoint = await volumeMountpoint(name: enriched[index].name) else { continue }
+            enriched[index].mountpoint = mountpoint
+            enriched[index].sizeBytes = await directorySizeBytes(atPath: mountpoint)
+        }
+        return enriched
+    }
+
+    private static func volumeMountpoint(name: String) async -> String? {
+        guard let output = try? await DockerCompatibilityService.shared.captureDocker(
+            arguments: ["volume", "inspect", name, "--format", "{{.Mountpoint}}"]
+        ) else {
+            return nil
+        }
+        let path = output.trimmingCharacters(in: .whitespacesAndNewlines)
+        guard !path.isEmpty, FileManager.default.fileExists(atPath: path) else {
+            return nil
+        }
+        return path
+    }
+
+    private static func directorySizeBytes(atPath path: String) async -> UInt64? {
+        guard let result = try? await ExternalCommandRunner.runOrThrow(
+            executable: "/usr/bin/du",
+            arguments: ["-sk", path]
+        ) else {
+            return nil
+        }
+        let firstColumn = result.split(separator: "\t").first ?? result.split(separator: " ").first ?? ""
+        guard let kilobytes = UInt64(firstColumn.trimmingCharacters(in: .whitespaces)) else {
+            return nil
+        }
+        return kilobytes * 1024
+    }
+
     static func listDockerVolumes() async -> [VolumeRecord] {
         guard await canQueryDocker() else { return [] }
         do {

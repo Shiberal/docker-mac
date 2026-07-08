@@ -82,6 +82,10 @@ public actor ContainerCLI {
 
     public var binaryPath: String { config.binaryPath }
 
+    public nonisolated func resolvedBinaryPath() -> String {
+        config.resolvedInstalledPath() ?? config.binaryPath
+    }
+
     public func isInstalled() -> Bool {
         config.resolvedInstalledPath() != nil
     }
@@ -162,7 +166,81 @@ public actor ContainerCLI {
         return result.stdout
     }
 
+    /// Runs a long-lived, non-terminating command (e.g. `logs -f`) and yields complete
+    /// lines incrementally as they're produced, instead of buffering until exit.
+    public func stream(_ arguments: [String]) -> AsyncStream<String> {
+        let executable = resolvedExecutablePath()
+        return AsyncStream { continuation in
+            let process = Process()
+            process.executableURL = URL(fileURLWithPath: executable)
+            process.arguments = arguments
+            process.environment = ProcessInfo.processInfo.environment
+
+            let pipe = Pipe()
+            process.standardOutput = pipe
+            process.standardError = pipe
+
+            let buffer = LineBuffer()
+            pipe.fileHandleForReading.readabilityHandler = { handle in
+                let data = handle.availableData
+                guard !data.isEmpty else {
+                    pipe.fileHandleForReading.readabilityHandler = nil
+                    if let remainder = buffer.flush() {
+                        continuation.yield(remainder)
+                    }
+                    continuation.finish()
+                    return
+                }
+                for line in buffer.append(data) {
+                    continuation.yield(line)
+                }
+            }
+
+            continuation.onTermination = { _ in
+                pipe.fileHandleForReading.readabilityHandler = nil
+                if process.isRunning {
+                    process.terminate()
+                }
+            }
+
+            do {
+                try process.run()
+            } catch {
+                continuation.yield("Error: \(error.localizedDescription)")
+                continuation.finish()
+            }
+        }
+    }
+
     private func resolvedExecutablePath() -> String {
         config.resolvedInstalledPath() ?? config.binaryPath
+    }
+}
+
+/// Accumulates raw byte chunks and hands back only complete, newline-terminated lines.
+private final class LineBuffer: @unchecked Sendable {
+    private var pending = Data()
+    private let lock = NSLock()
+
+    func append(_ data: Data) -> [String] {
+        lock.lock()
+        defer { lock.unlock() }
+        pending.append(data)
+        var lines: [String] = []
+        while let range = pending.range(of: Data("\n".utf8)) {
+            let lineData = pending.subdata(in: pending.startIndex..<range.lowerBound)
+            pending.removeSubrange(pending.startIndex..<range.upperBound)
+            lines.append(String(data: lineData, encoding: .utf8) ?? "")
+        }
+        return lines
+    }
+
+    func flush() -> String? {
+        lock.lock()
+        defer { lock.unlock() }
+        guard !pending.isEmpty else { return nil }
+        let text = String(data: pending, encoding: .utf8)
+        pending.removeAll()
+        return text
     }
 }

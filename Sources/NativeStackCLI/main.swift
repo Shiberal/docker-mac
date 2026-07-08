@@ -18,6 +18,7 @@ struct NativeStackCLI: AsyncParsableCommand {
             Logs.self,
             Image.self,
             Run.self,
+            Exec.self,
             Docker.self,
             Compose.self,
             Serve.self,
@@ -228,6 +229,23 @@ struct Run: AsyncParsableCommand {
         if runDetached {
             print("Started \(image)")
         }
+    }
+}
+
+struct Exec: AsyncParsableCommand {
+    static let configuration = CommandConfiguration(
+        abstract: "Run a command in a running container (defaults to sh)"
+    )
+
+    @Argument(help: "Container ID or name")
+    var id: String
+
+    @Argument(parsing: .remaining, help: "Command to run (defaults to sh)")
+    var command: [String] = []
+
+    mutating func run() async throws {
+        let service = await makeService(autoInstall: false)
+        try await service.execInteractive(id: id, command: command)
     }
 }
 

@@ -36,6 +36,16 @@
     "swift-dependencies" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Debug/NativeStackApp-6CDEE1A68445508C-testable-t.build/Objects-normal/arm64/ContainerListView.swiftdeps",
     "swiftmodule" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Debug/NativeStackApp-6CDEE1A68445508C-testable-t.build/Objects-normal/arm64/ContainerListView~partial.swiftmodule"
   },
+  "/Users/shiberal/Desktop/cartella senza nome 4/Sources/NativeStackApp/CrashNotifier.swift" : {
+    "const-values" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Debug/NativeStackApp-6CDEE1A68445508C-testable-t.build/Objects-normal/arm64/CrashNotifier.swiftconstvalues",
+    "dependencies" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Debug/NativeStackApp-6CDEE1A68445508C-testable-t.build/Objects-normal/arm64/CrashNotifier.d",
+    "diagnostics" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Debug/NativeStackApp-6CDEE1A68445508C-testable-t.build/Objects-normal/arm64/CrashNotifier.dia",
+    "index-unit-output-path" : "/NativeStackKit.build/Debug/NativeStackApp-6CDEE1A68445508C-testable-t.build/Objects-normal/arm64/CrashNotifier.o",
+    "llvm-bc" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Debug/NativeStackApp-6CDEE1A68445508C-testable-t.build/Objects-normal/arm64/CrashNotifier.bc",
+    "object" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Debug/NativeStackApp-6CDEE1A68445508C-testable-t.build/Objects-normal/arm64/CrashNotifier.o",
+    "swift-dependencies" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Debug/NativeStackApp-6CDEE1A68445508C-testable-t.build/Objects-normal/arm64/CrashNotifier.swiftdeps",
+    "swiftmodule" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Debug/NativeStackApp-6CDEE1A68445508C-testable-t.build/Objects-normal/arm64/CrashNotifier~partial.swiftmodule"
+  },
   "/Users/shiberal/Desktop/cartella senza nome 4/Sources/NativeStackApp/DockerSettingsView.swift" : {
     "const-values" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Debug/NativeStackApp-6CDEE1A68445508C-testable-t.build/Objects-normal/arm64/DockerSettingsView.swiftconstvalues",
     "dependencies" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Debug/NativeStackApp-6CDEE1A68445508C-testable-t.build/Objects-normal/arm64/DockerSettingsView.d",
@@ -65,6 +75,16 @@
     "object" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Debug/NativeStackApp-6CDEE1A68445508C-testable-t.build/Objects-normal/arm64/MainWindowView.o",
     "swift-dependencies" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Debug/NativeStackApp-6CDEE1A68445508C-testable-t.build/Objects-normal/arm64/MainWindowView.swiftdeps",
     "swiftmodule" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Debug/NativeStackApp-6CDEE1A68445508C-testable-t.build/Objects-normal/arm64/MainWindowView~partial.swiftmodule"
+  },
+  "/Users/shiberal/Desktop/cartella senza nome 4/Sources/NativeStackApp/MenuBarQuickActions.swift" : {
+    "const-values" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Debug/NativeStackApp-6CDEE1A68445508C-testable-t.build/Objects-normal/arm64/MenuBarQuickActions.swiftconstvalues",
+    "dependencies" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Debug/NativeStackApp-6CDEE1A68445508C-testable-t.build/Objects-normal/arm64/MenuBarQuickActions.d",
+    "diagnostics" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Debug/NativeStackApp-6CDEE1A68445508C-testable-t.build/Objects-normal/arm64/MenuBarQuickActions.dia",
+    "index-unit-output-path" : "/NativeStackKit.build/Debug/NativeStackApp-6CDEE1A68445508C-testable-t.build/Objects-normal/arm64/MenuBarQuickActions.o",
+    "llvm-bc" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Debug/NativeStackApp-6CDEE1A68445508C-testable-t.build/Objects-normal/arm64/MenuBarQuickActions.bc",
+    "object" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Debug/NativeStackApp-6CDEE1A68445508C-testable-t.build/Objects-normal/arm64/MenuBarQuickActions.o",
+    "swift-dependencies" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Debug/NativeStackApp-6CDEE1A68445508C-testable-t.build/Objects-normal/arm64/MenuBarQuickActions.swiftdeps",
+    "swiftmodule" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Debug/NativeStackApp-6CDEE1A68445508C-testable-t.build/Objects-normal/arm64/MenuBarQuickActions~partial.swiftmodule"
   },
   "/Users/shiberal/Desktop/cartella senza nome 4/Sources/NativeStackApp/MenuBarRootView.swift" : {
     "const-values" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Debug/NativeStackApp-6CDEE1A68445508C-testable-t.build/Objects-normal/arm64/MenuBarRootView.swiftconstvalues",

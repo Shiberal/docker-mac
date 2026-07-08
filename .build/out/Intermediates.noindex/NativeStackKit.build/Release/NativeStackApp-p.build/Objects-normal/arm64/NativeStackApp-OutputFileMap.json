@@ -23,6 +23,11 @@
     "llvm-bc" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/NativeStackApp-p.build/Objects-normal/arm64/ContainerListView.bc",
     "object" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/NativeStackApp-p.build/Objects-normal/arm64/ContainerListView.o"
   },
+  "/Users/shiberal/Desktop/cartella senza nome 4/Sources/NativeStackApp/CrashNotifier.swift" : {
+    "index-unit-output-path" : "/NativeStackKit.build/Release/NativeStackApp-p.build/Objects-normal/arm64/CrashNotifier.o",
+    "llvm-bc" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/NativeStackApp-p.build/Objects-normal/arm64/CrashNotifier.bc",
+    "object" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/NativeStackApp-p.build/Objects-normal/arm64/CrashNotifier.o"
+  },
   "/Users/shiberal/Desktop/cartella senza nome 4/Sources/NativeStackApp/DockerSettingsView.swift" : {
     "index-unit-output-path" : "/NativeStackKit.build/Release/NativeStackApp-p.build/Objects-normal/arm64/DockerSettingsView.o",
     "llvm-bc" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/NativeStackApp-p.build/Objects-normal/arm64/DockerSettingsView.bc",
@@ -37,6 +42,11 @@
     "index-unit-output-path" : "/NativeStackKit.build/Release/NativeStackApp-p.build/Objects-normal/arm64/MainWindowView.o",
     "llvm-bc" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/NativeStackApp-p.build/Objects-normal/arm64/MainWindowView.bc",
     "object" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/NativeStackApp-p.build/Objects-normal/arm64/MainWindowView.o"
+  },
+  "/Users/shiberal/Desktop/cartella senza nome 4/Sources/NativeStackApp/MenuBarQuickActions.swift" : {
+    "index-unit-output-path" : "/NativeStackKit.build/Release/NativeStackApp-p.build/Objects-normal/arm64/MenuBarQuickActions.o",
+    "llvm-bc" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/NativeStackApp-p.build/Objects-normal/arm64/MenuBarQuickActions.bc",
+    "object" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Release/NativeStackApp-p.build/Objects-normal/arm64/MenuBarQuickActions.o"
   },
   "/Users/shiberal/Desktop/cartella senza nome 4/Sources/NativeStackApp/MenuBarRootView.swift" : {
     "index-unit-output-path" : "/NativeStackKit.build/Release/NativeStackApp-p.build/Objects-normal/arm64/MenuBarRootView.o",

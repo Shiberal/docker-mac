@@ -136,6 +136,11 @@ public final class APIRouter {
                 return APIStatsResponse(stats: stats)
             }
         }
+        if request.method == "POST", request.path.hasPrefix("/api/containers/"), request.path.hasSuffix("/autostart") {
+            let prefix = request.path.dropFirst("/api/containers/".count)
+            let id = String(prefix.dropLast("/autostart".count))
+            return await setAutoStart(id: id, request: request)
+        }
         if request.method == "GET", request.path.hasPrefix("/api/containers/"), request.path.hasSuffix("/files") {
             let prefix = request.path.dropFirst("/api/containers/".count)
             let id = String(prefix.dropLast("/files".count))
@@ -169,7 +174,25 @@ public final class APIRouter {
             let decoded = name.removingPercentEncoding ?? name
             return await mutate { try await service.stopComposeStack(projectName: decoded) }
         }
+        if request.method == "GET", request.path.hasPrefix("/api/compose/"), request.path.hasSuffix("/env") {
+            let prefix = request.path.dropFirst("/api/compose/".count)
+            let name = String(prefix.dropLast("/env".count))
+            let decoded = name.removingPercentEncoding ?? name
+            return await query {
+                APIComposeEnvResponse(contents: try service.readComposeEnv(forProject: decoded))
+            }
+        }
+        if request.method == "POST", request.path.hasPrefix("/api/compose/"), request.path.hasSuffix("/env") {
+            let prefix = request.path.dropFirst("/api/compose/".count)
+            let name = String(prefix.dropLast("/env".count))
+            let decoded = name.removingPercentEncoding ?? name
+            return await saveComposeEnv(projectName: decoded, request: request)
+        }
         return .error("Not found", status: 404)
+    }
+
+    public func logStream(forContainer id: String) async -> AsyncStream<LogLine> {
+        await service.streamLogs(for: id)
     }
 
     private func makeSnapshot() -> APISnapshot {
@@ -278,6 +301,29 @@ public final class APIRouter {
             let body = try JSONDecoder().decode(APICreateNetworkBody.self, from: request.body)
             try await service.createNetwork(name: body.name)
             return .json(makeSnapshot())
+        } catch {
+            return .error(error.localizedDescription, status: 400)
+        }
+    }
+
+    private func setAutoStart(id: String, request: HTTPRequest) async -> HTTPResponse {
+        guard let container = service.containers.first(where: { $0.id == id }) else {
+            return .error("Container not found", status: 404)
+        }
+        do {
+            let body = try JSONDecoder().decode(APIAutoStartBody.self, from: request.body)
+            service.setAutoStart(body.enabled, forContainerNamed: container.displayName)
+            return .json(makeSnapshot())
+        } catch {
+            return .error(error.localizedDescription, status: 400)
+        }
+    }
+
+    private func saveComposeEnv(projectName: String, request: HTTPRequest) async -> HTTPResponse {
+        do {
+            let body = try JSONDecoder().decode(APIComposeEnvBody.self, from: request.body)
+            try service.writeComposeEnv(forProject: projectName, contents: body.contents)
+            return .json(APIComposeEnvResponse(contents: body.contents))
         } catch {
             return .error(error.localizedDescription, status: 400)
         }

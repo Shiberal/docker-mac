@@ -62,6 +62,7 @@ enum ContainerSnapshotLoader {
                 let dockerVolumes = await DockerResourceService.listDockerVolumes()
                 volumes = DockerResourceService.mergeVolumes(volumes, dockerVolumes)
             }
+            volumes = await DockerResourceService.enrichVolumes(volumes)
 
             var networks: [NetworkRecord] = []
             if let networksOut = try? await cli.runOrThrow(["network", "ls"]) {

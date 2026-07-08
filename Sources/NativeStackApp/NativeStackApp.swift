@@ -11,6 +11,9 @@ struct NativeStackApp: App {
 
     init() {
         NSApplication.shared.setActivationPolicy(.regular)
+        service.onContainerStoppedUnexpectedly = { container in
+            CrashNotifier.notify(container: container)
+        }
     }
 
     var body: some Scene {

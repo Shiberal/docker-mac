@@ -5,12 +5,12 @@
       "name" : "NativeStackKit",
       "path" : "/Users/shiberal/Desktop/cartella senza nome 4",
       "projects" : [
-        "35cfcf11fcfb415447203970b32d5a6978c922d8f6eee0cb3800da4df4642921",
+        "9f947a12f002398d8042706965c28da91ecd07f2bea4163719bea68f5830d0f3",
         "e519e56990398af07ce90e4c35a92a7d6ccec1bda76fa67884dc73788f92ec63",
-        "2d61f638033eccb6753938a7c0e752465ebf457fd33bc81ad183bcadfb3170b9"
+        "0b052675fa652a2c52cba81e0ff74facf868d5be583dba54cb042645d9018798"
       ]
     },
-    "signature" : "da5b0b9ab87277126592edae195f58eb9be0e030ff045689b6fd423e54a12ce9",
+    "signature" : "adb803250c349e2d0106a457649e122afba9e34501d25c50eee1475e6573aa21",
     "type" : "workspace"
   },
   {
@@ -219,39 +219,111 @@
               {
                 "fileType" : "sourcecode.swift",
                 "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_3::REF_0",
-                "name" : "Errors.swift",
-                "path" : "Errors.swift",
+                "name" : "ActivityMonitorView.swift",
+                "path" : "ActivityMonitorView.swift",
                 "sourceTree" : "<group>",
                 "type" : "file"
               },
               {
                 "fileType" : "sourcecode.swift",
                 "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_3::REF_1",
-                "name" : "InstallModels.swift",
-                "path" : "InstallModels.swift",
+                "name" : "ContainerInspectorView.swift",
+                "path" : "ContainerInspectorView.swift",
                 "sourceTree" : "<group>",
                 "type" : "file"
               },
               {
                 "fileType" : "sourcecode.swift",
                 "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_3::REF_2",
-                "name" : "Models.swift",
-                "path" : "Models.swift",
+                "name" : "ContainerListView.swift",
+                "path" : "ContainerListView.swift",
                 "sourceTree" : "<group>",
                 "type" : "file"
               },
               {
                 "fileType" : "sourcecode.swift",
                 "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_3::REF_3",
-                "name" : "UnixSocket.swift",
-                "path" : "UnixSocket.swift",
+                "name" : "CrashNotifier.swift",
+                "path" : "CrashNotifier.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_3::REF_4",
+                "name" : "DockerSettingsView.swift",
+                "path" : "DockerSettingsView.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_3::REF_5",
+                "name" : "ImageViews.swift",
+                "path" : "ImageViews.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_3::REF_6",
+                "name" : "MainWindowView.swift",
+                "path" : "MainWindowView.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_3::REF_7",
+                "name" : "MenuBarQuickActions.swift",
+                "path" : "MenuBarQuickActions.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_3::REF_8",
+                "name" : "MenuBarRootView.swift",
+                "path" : "MenuBarRootView.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_3::REF_9",
+                "name" : "NativeStackApp.swift",
+                "path" : "NativeStackApp.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_3::REF_10",
+                "name" : "OnboardingView.swift",
+                "path" : "OnboardingView.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_3::REF_11",
+                "name" : "SettingsView.swift",
+                "path" : "SettingsView.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_3::REF_12",
+                "name" : "WindowActivationHelper.swift",
+                "path" : "WindowActivationHelper.swift",
                 "sourceTree" : "<group>",
                 "type" : "file"
               }
             ],
             "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_3",
-            "name" : "/Users/shiberal/Desktop/cartella senza nome 4/Sources/NativeStackCore",
-            "path" : "/Users/shiberal/Desktop/cartella senza nome 4/Sources/NativeStackCore",
+            "name" : "/Users/shiberal/Desktop/cartella senza nome 4/Sources/NativeStackApp",
+            "path" : "/Users/shiberal/Desktop/cartella senza nome 4/Sources/NativeStackApp",
             "sourceTree" : "<absolute>",
             "type" : "group"
           },
@@ -301,127 +373,39 @@
               {
                 "fileType" : "sourcecode.swift",
                 "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_5::REF_0",
-                "name" : "ActivityStatsLoader.swift",
-                "path" : "ActivityStatsLoader.swift",
+                "name" : "Errors.swift",
+                "path" : "Errors.swift",
                 "sourceTree" : "<group>",
                 "type" : "file"
               },
               {
                 "fileType" : "sourcecode.swift",
                 "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_5::REF_1",
-                "name" : "AppSettingsStore.swift",
-                "path" : "AppSettingsStore.swift",
+                "name" : "InstallModels.swift",
+                "path" : "InstallModels.swift",
                 "sourceTree" : "<group>",
                 "type" : "file"
               },
               {
                 "fileType" : "sourcecode.swift",
                 "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_5::REF_2",
-                "name" : "ComposeHostsInjector.swift",
-                "path" : "ComposeHostsInjector.swift",
+                "name" : "Models.swift",
+                "path" : "Models.swift",
                 "sourceTree" : "<group>",
                 "type" : "file"
               },
               {
                 "fileType" : "sourcecode.swift",
                 "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_5::REF_3",
-                "name" : "ComposeProjectSupport.swift",
-                "path" : "ComposeProjectSupport.swift",
-                "sourceTree" : "<group>",
-                "type" : "file"
-              },
-              {
-                "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_5::REF_4",
-                "name" : "ComposeStackService.swift",
-                "path" : "ComposeStackService.swift",
-                "sourceTree" : "<group>",
-                "type" : "file"
-              },
-              {
-                "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_5::REF_5",
-                "name" : "ContainerCLI.swift",
-                "path" : "ContainerCLI.swift",
-                "sourceTree" : "<group>",
-                "type" : "file"
-              },
-              {
-                "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_5::REF_6",
-                "name" : "ContainerCLIExec.swift",
-                "path" : "ContainerCLIExec.swift",
-                "sourceTree" : "<group>",
-                "type" : "file"
-              },
-              {
-                "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_5::REF_7",
-                "name" : "ContainerOutputParser.swift",
-                "path" : "ContainerOutputParser.swift",
-                "sourceTree" : "<group>",
-                "type" : "file"
-              },
-              {
-                "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_5::REF_8",
-                "name" : "ContainerService.swift",
-                "path" : "ContainerService.swift",
-                "sourceTree" : "<group>",
-                "type" : "file"
-              },
-              {
-                "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_5::REF_9",
-                "name" : "ContainerSnapshotLoader.swift",
-                "path" : "ContainerSnapshotLoader.swift",
-                "sourceTree" : "<group>",
-                "type" : "file"
-              },
-              {
-                "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_5::REF_10",
-                "name" : "ContainerToolkitInstaller.swift",
-                "path" : "ContainerToolkitInstaller.swift",
-                "sourceTree" : "<group>",
-                "type" : "file"
-              },
-              {
-                "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_5::REF_11",
-                "name" : "DockerCompatibilityService.swift",
-                "path" : "DockerCompatibilityService.swift",
-                "sourceTree" : "<group>",
-                "type" : "file"
-              },
-              {
-                "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_5::REF_12",
-                "name" : "DockerResourceService.swift",
-                "path" : "DockerResourceService.swift",
-                "sourceTree" : "<group>",
-                "type" : "file"
-              },
-              {
-                "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_5::REF_13",
-                "name" : "ExternalCommandRunner.swift",
-                "path" : "ExternalCommandRunner.swift",
-                "sourceTree" : "<group>",
-                "type" : "file"
-              },
-              {
-                "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_5::REF_14",
-                "name" : "PipeDrainer.swift",
-                "path" : "PipeDrainer.swift",
+                "name" : "UnixSocket.swift",
+                "path" : "UnixSocket.swift",
                 "sourceTree" : "<group>",
                 "type" : "file"
               }
             ],
             "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_5",
-            "name" : "/Users/shiberal/Desktop/cartella senza nome 4/Sources/NativeStackClient",
-            "path" : "/Users/shiberal/Desktop/cartella senza nome 4/Sources/NativeStackClient",
+            "name" : "/Users/shiberal/Desktop/cartella senza nome 4/Sources/NativeStackCore",
+            "path" : "/Users/shiberal/Desktop/cartella senza nome 4/Sources/NativeStackCore",
             "sourceTree" : "<absolute>",
             "type" : "group"
           },
@@ -446,6 +430,14 @@
               {
                 "fileType" : "sourcecode.swift",
                 "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_6::REF_2",
+                "name" : "AutoStartStore.swift",
+                "path" : "AutoStartStore.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_6::REF_3",
                 "name" : "ComposeHostsInjector.swift",
                 "path" : "ComposeHostsInjector.swift",
                 "sourceTree" : "<group>",
@@ -453,7 +445,7 @@
               },
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_6::REF_3",
+                "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_6::REF_4",
                 "name" : "ComposeProjectSupport.swift",
                 "path" : "ComposeProjectSupport.swift",
                 "sourceTree" : "<group>",
@@ -461,7 +453,7 @@
               },
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_6::REF_4",
+                "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_6::REF_5",
                 "name" : "ComposeStackService.swift",
                 "path" : "ComposeStackService.swift",
                 "sourceTree" : "<group>",
@@ -469,7 +461,7 @@
               },
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_6::REF_5",
+                "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_6::REF_6",
                 "name" : "ContainerCLI.swift",
                 "path" : "ContainerCLI.swift",
                 "sourceTree" : "<group>",
@@ -477,7 +469,7 @@
               },
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_6::REF_6",
+                "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_6::REF_7",
                 "name" : "ContainerCLIExec.swift",
                 "path" : "ContainerCLIExec.swift",
                 "sourceTree" : "<group>",
@@ -485,7 +477,7 @@
               },
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_6::REF_7",
+                "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_6::REF_8",
                 "name" : "ContainerOutputParser.swift",
                 "path" : "ContainerOutputParser.swift",
                 "sourceTree" : "<group>",
@@ -493,7 +485,7 @@
               },
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_6::REF_8",
+                "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_6::REF_9",
                 "name" : "ContainerService.swift",
                 "path" : "ContainerService.swift",
                 "sourceTree" : "<group>",
@@ -501,7 +493,7 @@
               },
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_6::REF_9",
+                "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_6::REF_10",
                 "name" : "ContainerSnapshotLoader.swift",
                 "path" : "ContainerSnapshotLoader.swift",
                 "sourceTree" : "<group>",
@@ -509,7 +501,7 @@
               },
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_6::REF_10",
+                "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_6::REF_11",
                 "name" : "ContainerToolkitInstaller.swift",
                 "path" : "ContainerToolkitInstaller.swift",
                 "sourceTree" : "<group>",
@@ -517,7 +509,7 @@
               },
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_6::REF_11",
+                "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_6::REF_12",
                 "name" : "DockerCompatibilityService.swift",
                 "path" : "DockerCompatibilityService.swift",
                 "sourceTree" : "<group>",
@@ -525,7 +517,7 @@
               },
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_6::REF_12",
+                "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_6::REF_13",
                 "name" : "DockerResourceService.swift",
                 "path" : "DockerResourceService.swift",
                 "sourceTree" : "<group>",
@@ -533,7 +525,7 @@
               },
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_6::REF_13",
+                "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_6::REF_14",
                 "name" : "ExternalCommandRunner.swift",
                 "path" : "ExternalCommandRunner.swift",
                 "sourceTree" : "<group>",
@@ -541,7 +533,7 @@
               },
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_6::REF_14",
+                "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_6::REF_15",
                 "name" : "PipeDrainer.swift",
                 "path" : "PipeDrainer.swift",
                 "sourceTree" : "<group>",
@@ -559,13 +551,150 @@
               {
                 "fileType" : "sourcecode.swift",
                 "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_7::REF_0",
+                "name" : "ActivityStatsLoader.swift",
+                "path" : "ActivityStatsLoader.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_7::REF_1",
+                "name" : "AppSettingsStore.swift",
+                "path" : "AppSettingsStore.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_7::REF_2",
+                "name" : "AutoStartStore.swift",
+                "path" : "AutoStartStore.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_7::REF_3",
+                "name" : "ComposeHostsInjector.swift",
+                "path" : "ComposeHostsInjector.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_7::REF_4",
+                "name" : "ComposeProjectSupport.swift",
+                "path" : "ComposeProjectSupport.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_7::REF_5",
+                "name" : "ComposeStackService.swift",
+                "path" : "ComposeStackService.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_7::REF_6",
+                "name" : "ContainerCLI.swift",
+                "path" : "ContainerCLI.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_7::REF_7",
+                "name" : "ContainerCLIExec.swift",
+                "path" : "ContainerCLIExec.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_7::REF_8",
+                "name" : "ContainerOutputParser.swift",
+                "path" : "ContainerOutputParser.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_7::REF_9",
+                "name" : "ContainerService.swift",
+                "path" : "ContainerService.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_7::REF_10",
+                "name" : "ContainerSnapshotLoader.swift",
+                "path" : "ContainerSnapshotLoader.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_7::REF_11",
+                "name" : "ContainerToolkitInstaller.swift",
+                "path" : "ContainerToolkitInstaller.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_7::REF_12",
+                "name" : "DockerCompatibilityService.swift",
+                "path" : "DockerCompatibilityService.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_7::REF_13",
+                "name" : "DockerResourceService.swift",
+                "path" : "DockerResourceService.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_7::REF_14",
+                "name" : "ExternalCommandRunner.swift",
+                "path" : "ExternalCommandRunner.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_7::REF_15",
+                "name" : "PipeDrainer.swift",
+                "path" : "PipeDrainer.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              }
+            ],
+            "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_7",
+            "name" : "/Users/shiberal/Desktop/cartella senza nome 4/Sources/NativeStackClient",
+            "path" : "/Users/shiberal/Desktop/cartella senza nome 4/Sources/NativeStackClient",
+            "sourceTree" : "<absolute>",
+            "type" : "group"
+          },
+          {
+            "children" : [
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_8::REF_0",
                 "name" : "main.swift",
                 "path" : "main.swift",
                 "sourceTree" : "<group>",
                 "type" : "file"
               }
             ],
-            "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_7",
+            "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_8",
             "name" : "/Users/shiberal/Desktop/cartella senza nome 4/Sources/NativeStackCLI",
             "path" : "/Users/shiberal/Desktop/cartella senza nome 4/Sources/NativeStackCLI",
             "sourceTree" : "<absolute>",
@@ -575,7 +704,120 @@
             "children" : [
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_8::REF_0",
+                "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_9::REF_0",
+                "name" : "ActivityMonitorView.swift",
+                "path" : "ActivityMonitorView.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_9::REF_1",
+                "name" : "ContainerInspectorView.swift",
+                "path" : "ContainerInspectorView.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_9::REF_2",
+                "name" : "ContainerListView.swift",
+                "path" : "ContainerListView.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_9::REF_3",
+                "name" : "CrashNotifier.swift",
+                "path" : "CrashNotifier.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_9::REF_4",
+                "name" : "DockerSettingsView.swift",
+                "path" : "DockerSettingsView.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_9::REF_5",
+                "name" : "ImageViews.swift",
+                "path" : "ImageViews.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_9::REF_6",
+                "name" : "MainWindowView.swift",
+                "path" : "MainWindowView.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_9::REF_7",
+                "name" : "MenuBarQuickActions.swift",
+                "path" : "MenuBarQuickActions.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_9::REF_8",
+                "name" : "MenuBarRootView.swift",
+                "path" : "MenuBarRootView.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_9::REF_9",
+                "name" : "NativeStackApp.swift",
+                "path" : "NativeStackApp.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_9::REF_10",
+                "name" : "OnboardingView.swift",
+                "path" : "OnboardingView.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_9::REF_11",
+                "name" : "SettingsView.swift",
+                "path" : "SettingsView.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              },
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_9::REF_12",
+                "name" : "WindowActivationHelper.swift",
+                "path" : "WindowActivationHelper.swift",
+                "sourceTree" : "<group>",
+                "type" : "file"
+              }
+            ],
+            "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_9",
+            "name" : "/Users/shiberal/Desktop/cartella senza nome 4/Sources/NativeStackApp",
+            "path" : "/Users/shiberal/Desktop/cartella senza nome 4/Sources/NativeStackApp",
+            "sourceTree" : "<absolute>",
+            "type" : "group"
+          },
+          {
+            "children" : [
+              {
+                "fileType" : "sourcecode.swift",
+                "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_10::REF_0",
                 "name" : "APIModels.swift",
                 "path" : "APIModels.swift",
                 "sourceTree" : "<group>",
@@ -583,7 +825,7 @@
               },
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_8::REF_1",
+                "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_10::REF_1",
                 "name" : "APIRouter.swift",
                 "path" : "APIRouter.swift",
                 "sourceTree" : "<group>",
@@ -591,7 +833,7 @@
               },
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_8::REF_2",
+                "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_10::REF_2",
                 "name" : "APIServer.swift",
                 "path" : "APIServer.swift",
                 "sourceTree" : "<group>",
@@ -599,14 +841,14 @@
               },
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_8::REF_3",
+                "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_10::REF_3",
                 "name" : "HTTP.swift",
                 "path" : "HTTP.swift",
                 "sourceTree" : "<group>",
                 "type" : "file"
               }
             ],
-            "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_8",
+            "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_10",
             "name" : "/Users/shiberal/Desktop/cartella senza nome 4/Sources/NativeStackAPIServer",
             "path" : "/Users/shiberal/Desktop/cartella senza nome 4/Sources/NativeStackAPIServer",
             "sourceTree" : "<absolute>",
@@ -616,7 +858,7 @@
             "children" : [
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_9::REF_0",
+                "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_11::REF_0",
                 "name" : "APIModels.swift",
                 "path" : "APIModels.swift",
                 "sourceTree" : "<group>",
@@ -624,7 +866,7 @@
               },
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_9::REF_1",
+                "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_11::REF_1",
                 "name" : "APIRouter.swift",
                 "path" : "APIRouter.swift",
                 "sourceTree" : "<group>",
@@ -632,7 +874,7 @@
               },
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_9::REF_2",
+                "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_11::REF_2",
                 "name" : "APIServer.swift",
                 "path" : "APIServer.swift",
                 "sourceTree" : "<group>",
@@ -640,14 +882,14 @@
               },
               {
                 "fileType" : "sourcecode.swift",
-                "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_9::REF_3",
+                "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_11::REF_3",
                 "name" : "HTTP.swift",
                 "path" : "HTTP.swift",
                 "sourceTree" : "<group>",
                 "type" : "file"
               }
             ],
-            "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_9",
+            "guid" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_11",
             "name" : "/Users/shiberal/Desktop/cartella senza nome 4/Sources/NativeStackAPIServer",
             "path" : "/Users/shiberal/Desktop/cartella senza nome 4/Sources/NativeStackAPIServer",
             "sourceTree" : "<absolute>",
@@ -669,17 +911,19 @@
         "063dbfa3f928bc60830f29fabf1cf8dc9614b8f941352dfa91903e6076143776",
         "327427e02efc2940f974990c9ef5a4c39b10bfd55af5327a91c98612b8e08ffc",
         "aa9e378bd12e2318e0bd67b5ac1f724d6ec3209f63cf815c645c7d4c47e0cfc3",
-        "3111b981d4cc5ebd9d5571cf111d0dfaf85ae4cce96bd621471c1ddc74d3fb10",
-        "80957db33e2df0e16774f399a0bafda37209f0b53fd7f068498e5e98d2b0e25c",
-        "d3aded0e11967040eb13fccc91cd43df0a4c8e4e91320152130518f0d62f5675",
-        "a924768d772326eb6da487e86bd3f4149fec9e968c6b6921c035309d112ef4f4",
-        "0e0d1aff0d0788bf1728542be2277a59c4e8f0bf5b3b0a7bb6ad908f13ea765e",
-        "9e9e13293db75798b708ef85b26528895e2e110771cbf06b1a6fa85eaddfe83a",
-        "134887822f6fe7ade981ba98520d89f1aa61c0ddc1541ba29a3fd83eb3422b59",
+        "a70a360b1d01495f0046cd1cd54991c661ace967e57c8604a790f1891680bc54",
+        "a9e32210134dd3c23359aebbb289eefb086b12a2d6d137502b97968b3caffbe4",
+        "7980ae127e2434b118807d02ec51081bf0d024ffab8dc332adbec9ec0458c6d5",
+        "643338a127ca0164a00ae83db1cfa18add2711784619292d714acddbce8a9cca",
+        "62f79e35a963249a5efb03bbebb21228a9eb0e367e3bf94952260d6f4db8faec",
+        "21b84e95fdefa4ebb6610ea7baf04b34786da80dfcb0aa9a7532a8489f2fe475",
+        "7e624fa99f9c55a5f28da032314d52f16e2287997f228656535a00527e3238a6",
+        "9e13fce17d569f879b8b8ae640abbfe6d93d9bd2c2efb76995ac0cbb9534b96b",
+        "34ea88b36abe41b56d78a97052fdef72ecfa3b9be6ff0e7ed2484f3e541bba48",
         "1f60b2f9d2a305bab724be7a8e561f8c245eaa4aac22b3c91a8095acdedeac58"
       ]
     },
-    "signature" : "35cfcf11fcfb415447203970b32d5a6978c922d8f6eee0cb3800da4df4642921",
+    "signature" : "9f947a12f002398d8042706965c28da91ecd07f2bea4163719bea68f5830d0f3",
     "type" : "project"
   },
   {
@@ -1076,6 +1320,279 @@
       "buildConfigurations" : [
         {
           "buildSettings" : {
+            "DRIVERKIT_DEPLOYMENT_TARGET" : "21.0",
+            "GENERATE_EMBED_IN_CODE_ACCESSORS" : "NO",
+            "GENERATE_RESOURCE_ACCESSORS" : "YES",
+            "IPHONEOS_DEPLOYMENT_TARGET" : "15.0",
+            "IPHONEOS_DEPLOYMENT_TARGET[__platform_filter=ios-maccatalyst]" : "15.0",
+            "MACOSX_DEPLOYMENT_TARGET" : "15.0",
+            "OTHER_SWIFT_FLAGS" : [
+              "$(inherited)",
+              "$(OTHER_SWIFT_FLAGS_ENABLE_LIBFUZZER_$(ENABLE_LIBFUZZER))"
+            ],
+            "OTHER_SWIFT_FLAGS_ENABLE_LIBFUZZER_YES" : [
+              "-Xfrontend",
+              "-entry-point-function-name",
+              "-Xfrontend",
+              "NativeStackApp_main"
+            ],
+            "PACKAGE_RESOURCE_TARGET_KIND" : "regular",
+            "PRODUCT_BUNDLE_IDENTIFIER" : "cartella-senza-nome-4.NativeStackApp",
+            "PRODUCT_MODULE_NAME" : "NativeStackApp",
+            "PRODUCT_NAME" : "$(TARGET_NAME)",
+            "SDKROOT" : "auto",
+            "SDK_VARIANT" : "auto",
+            "SWIFT_DISABLE_PARSE_AS_LIBRARY" : "NO",
+            "SWIFT_ENABLE_BARE_SLASH_REGEX" : "NO",
+            "SWIFT_INSTALL_MODULE" : "NO",
+            "SWIFT_LIBRARIES_ONLY" : "YES",
+            "SWIFT_PACKAGE_NAME" : "cartella_senza_nome_4",
+            "SWIFT_VERSION" : "6",
+            "SYMBOL_GRAPH_EXTRACTOR_OUTPUT_DIR" : "$(TARGET_BUILD_DIR)/$(CURRENT_ARCH)/NativeStackApp.symbolgraphs",
+            "TARGET_NAME" : "NativeStackApp",
+            "TARGET_TEMP_DIR_SUFFIX" : "-p",
+            "TVOS_DEPLOYMENT_TARGET" : "15.0",
+            "WATCHOS_DEPLOYMENT_TARGET" : "9.0",
+            "XROS_DEPLOYMENT_TARGET" : "1.0"
+          },
+          "guid" : "PACKAGE-PRODUCT:cartella senza nome 4_NativeStackApp.NativeStackApp::BUILDCONFIG_0",
+          "impartedBuildProperties" : {
+            "buildSettings" : {
+
+            }
+          },
+          "name" : "Debug"
+        },
+        {
+          "buildSettings" : {
+            "DRIVERKIT_DEPLOYMENT_TARGET" : "21.0",
+            "GENERATE_EMBED_IN_CODE_ACCESSORS" : "NO",
+            "GENERATE_RESOURCE_ACCESSORS" : "YES",
+            "IPHONEOS_DEPLOYMENT_TARGET" : "15.0",
+            "IPHONEOS_DEPLOYMENT_TARGET[__platform_filter=ios-maccatalyst]" : "15.0",
+            "MACOSX_DEPLOYMENT_TARGET" : "15.0",
+            "OTHER_SWIFT_FLAGS" : [
+              "$(inherited)",
+              "$(OTHER_SWIFT_FLAGS_ENABLE_LIBFUZZER_$(ENABLE_LIBFUZZER))"
+            ],
+            "OTHER_SWIFT_FLAGS_ENABLE_LIBFUZZER_YES" : [
+              "-Xfrontend",
+              "-entry-point-function-name",
+              "-Xfrontend",
+              "NativeStackApp_main"
+            ],
+            "PACKAGE_RESOURCE_TARGET_KIND" : "regular",
+            "PRODUCT_BUNDLE_IDENTIFIER" : "cartella-senza-nome-4.NativeStackApp",
+            "PRODUCT_MODULE_NAME" : "NativeStackApp",
+            "PRODUCT_NAME" : "$(TARGET_NAME)",
+            "SDKROOT" : "auto",
+            "SDK_VARIANT" : "auto",
+            "SWIFT_DISABLE_PARSE_AS_LIBRARY" : "NO",
+            "SWIFT_ENABLE_BARE_SLASH_REGEX" : "NO",
+            "SWIFT_INSTALL_MODULE" : "NO",
+            "SWIFT_LIBRARIES_ONLY" : "YES",
+            "SWIFT_PACKAGE_NAME" : "cartella_senza_nome_4",
+            "SWIFT_VERSION" : "6",
+            "SYMBOL_GRAPH_EXTRACTOR_OUTPUT_DIR" : "$(TARGET_BUILD_DIR)/$(CURRENT_ARCH)/NativeStackApp.symbolgraphs",
+            "TARGET_NAME" : "NativeStackApp",
+            "TARGET_TEMP_DIR_SUFFIX" : "-p",
+            "TVOS_DEPLOYMENT_TARGET" : "15.0",
+            "WATCHOS_DEPLOYMENT_TARGET" : "9.0",
+            "XROS_DEPLOYMENT_TARGET" : "1.0"
+          },
+          "guid" : "PACKAGE-PRODUCT:cartella senza nome 4_NativeStackApp.NativeStackApp::BUILDCONFIG_1",
+          "impartedBuildProperties" : {
+            "buildSettings" : {
+
+            }
+          },
+          "name" : "Release"
+        }
+      ],
+      "buildPhases" : [
+        {
+          "buildFiles" : [
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_3::REF_0",
+              "guid" : "PACKAGE-PRODUCT:cartella senza nome 4_NativeStackApp.NativeStackApp::BUILDPHASE_0::0",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_3::REF_1",
+              "guid" : "PACKAGE-PRODUCT:cartella senza nome 4_NativeStackApp.NativeStackApp::BUILDPHASE_0::1",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_3::REF_2",
+              "guid" : "PACKAGE-PRODUCT:cartella senza nome 4_NativeStackApp.NativeStackApp::BUILDPHASE_0::2",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_3::REF_3",
+              "guid" : "PACKAGE-PRODUCT:cartella senza nome 4_NativeStackApp.NativeStackApp::BUILDPHASE_0::3",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_3::REF_4",
+              "guid" : "PACKAGE-PRODUCT:cartella senza nome 4_NativeStackApp.NativeStackApp::BUILDPHASE_0::4",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_3::REF_5",
+              "guid" : "PACKAGE-PRODUCT:cartella senza nome 4_NativeStackApp.NativeStackApp::BUILDPHASE_0::5",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_3::REF_6",
+              "guid" : "PACKAGE-PRODUCT:cartella senza nome 4_NativeStackApp.NativeStackApp::BUILDPHASE_0::6",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_3::REF_7",
+              "guid" : "PACKAGE-PRODUCT:cartella senza nome 4_NativeStackApp.NativeStackApp::BUILDPHASE_0::7",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_3::REF_8",
+              "guid" : "PACKAGE-PRODUCT:cartella senza nome 4_NativeStackApp.NativeStackApp::BUILDPHASE_0::8",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_3::REF_9",
+              "guid" : "PACKAGE-PRODUCT:cartella senza nome 4_NativeStackApp.NativeStackApp::BUILDPHASE_0::9",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_3::REF_10",
+              "guid" : "PACKAGE-PRODUCT:cartella senza nome 4_NativeStackApp.NativeStackApp::BUILDPHASE_0::10",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_3::REF_11",
+              "guid" : "PACKAGE-PRODUCT:cartella senza nome 4_NativeStackApp.NativeStackApp::BUILDPHASE_0::11",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_3::REF_12",
+              "guid" : "PACKAGE-PRODUCT:cartella senza nome 4_NativeStackApp.NativeStackApp::BUILDPHASE_0::12",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            }
+          ],
+          "guid" : "PACKAGE-PRODUCT:cartella senza nome 4_NativeStackApp.NativeStackApp::BUILDPHASE_0",
+          "type" : "com.apple.buildphase.sources"
+        },
+        {
+          "buildFiles" : [
+            {
+              "guid" : "PACKAGE-PRODUCT:cartella senza nome 4_NativeStackApp.NativeStackApp::BUILDPHASE_1::0",
+              "platformFilters" : [
+
+              ],
+              "targetReference" : "PACKAGE-TARGET:NativeStackCore"
+            },
+            {
+              "guid" : "PACKAGE-PRODUCT:cartella senza nome 4_NativeStackApp.NativeStackApp::BUILDPHASE_1::1",
+              "platformFilters" : [
+
+              ],
+              "targetReference" : "PACKAGE-TARGET:NativeStackClient"
+            }
+          ],
+          "guid" : "PACKAGE-PRODUCT:cartella senza nome 4_NativeStackApp.NativeStackApp::BUILDPHASE_1",
+          "type" : "com.apple.buildphase.frameworks"
+        }
+      ],
+      "buildRules" : [
+
+      ],
+      "customTasks" : [
+
+      ],
+      "dependencies" : [
+        {
+          "guid" : "PACKAGE-TARGET:NativeStackCore",
+          "platformFilters" : [
+
+          ]
+        },
+        {
+          "guid" : "PACKAGE-TARGET:NativeStackClient",
+          "platformFilters" : [
+
+          ]
+        }
+      ],
+      "guid" : "PACKAGE-PRODUCT:cartella senza nome 4_NativeStackApp.NativeStackApp",
+      "name" : "NativeStackApp-product",
+      "productReference" : {
+        "guid" : "PRODUCTREF-PACKAGE-PRODUCT:cartella senza nome 4_NativeStackApp.NativeStackApp",
+        "name" : "$(EXECUTABLE_NAME)",
+        "type" : "file"
+      },
+      "productTypeIdentifier" : "com.apple.product-type.tool",
+      "type" : "standard"
+    },
+    "signature" : "a70a360b1d01495f0046cd1cd54991c661ace967e57c8604a790f1891680bc54",
+    "type" : "target"
+  },
+  {
+    "contents" : {
+      "approvedByUser" : "true",
+      "buildConfigurations" : [
+        {
+          "buildSettings" : {
             "DEFINES_MODULE" : "YES",
             "GENERATE_PRELINK_OBJECT_FILE" : "NO",
             "MODULEMAP_FILE_CONTENTS" : "module NativeStackCore {\nheader \"NativeStackCore-Swift.h\"\nexport *\n}",
@@ -1181,7 +1698,7 @@
           "buildFiles" : [
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_3::REF_0",
+              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_4::REF_0",
               "guid" : "PACKAGE-TARGET:NativeStackCore::BUILDPHASE_0::0",
               "platformFilters" : [
 
@@ -1190,7 +1707,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_3::REF_1",
+              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_4::REF_1",
               "guid" : "PACKAGE-TARGET:NativeStackCore::BUILDPHASE_0::1",
               "platformFilters" : [
 
@@ -1199,7 +1716,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_3::REF_2",
+              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_4::REF_2",
               "guid" : "PACKAGE-TARGET:NativeStackCore::BUILDPHASE_0::2",
               "platformFilters" : [
 
@@ -1208,7 +1725,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_3::REF_3",
+              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_4::REF_3",
               "guid" : "PACKAGE-TARGET:NativeStackCore::BUILDPHASE_0::3",
               "platformFilters" : [
 
@@ -1240,7 +1757,7 @@
       "productTypeIdentifier" : "org.swift.product-type.library.static",
       "type" : "standard"
     },
-    "signature" : "3111b981d4cc5ebd9d5571cf111d0dfaf85ae4cce96bd621471c1ddc74d3fb10",
+    "signature" : "a9e32210134dd3c23359aebbb289eefb086b12a2d6d137502b97968b3caffbe4",
     "type" : "target"
   },
   {
@@ -1354,7 +1871,7 @@
           "buildFiles" : [
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_5::REF_0",
+              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_6::REF_0",
               "guid" : "PACKAGE-TARGET:NativeStackClient::BUILDPHASE_0::0",
               "platformFilters" : [
 
@@ -1363,7 +1880,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_5::REF_1",
+              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_6::REF_1",
               "guid" : "PACKAGE-TARGET:NativeStackClient::BUILDPHASE_0::1",
               "platformFilters" : [
 
@@ -1372,7 +1889,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_5::REF_2",
+              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_6::REF_2",
               "guid" : "PACKAGE-TARGET:NativeStackClient::BUILDPHASE_0::2",
               "platformFilters" : [
 
@@ -1381,7 +1898,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_5::REF_3",
+              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_6::REF_3",
               "guid" : "PACKAGE-TARGET:NativeStackClient::BUILDPHASE_0::3",
               "platformFilters" : [
 
@@ -1390,7 +1907,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_5::REF_4",
+              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_6::REF_4",
               "guid" : "PACKAGE-TARGET:NativeStackClient::BUILDPHASE_0::4",
               "platformFilters" : [
 
@@ -1399,7 +1916,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_5::REF_5",
+              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_6::REF_5",
               "guid" : "PACKAGE-TARGET:NativeStackClient::BUILDPHASE_0::5",
               "platformFilters" : [
 
@@ -1408,7 +1925,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_5::REF_6",
+              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_6::REF_6",
               "guid" : "PACKAGE-TARGET:NativeStackClient::BUILDPHASE_0::6",
               "platformFilters" : [
 
@@ -1417,7 +1934,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_5::REF_7",
+              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_6::REF_7",
               "guid" : "PACKAGE-TARGET:NativeStackClient::BUILDPHASE_0::7",
               "platformFilters" : [
 
@@ -1426,7 +1943,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_5::REF_8",
+              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_6::REF_8",
               "guid" : "PACKAGE-TARGET:NativeStackClient::BUILDPHASE_0::8",
               "platformFilters" : [
 
@@ -1435,7 +1952,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_5::REF_9",
+              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_6::REF_9",
               "guid" : "PACKAGE-TARGET:NativeStackClient::BUILDPHASE_0::9",
               "platformFilters" : [
 
@@ -1444,7 +1961,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_5::REF_10",
+              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_6::REF_10",
               "guid" : "PACKAGE-TARGET:NativeStackClient::BUILDPHASE_0::10",
               "platformFilters" : [
 
@@ -1453,7 +1970,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_5::REF_11",
+              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_6::REF_11",
               "guid" : "PACKAGE-TARGET:NativeStackClient::BUILDPHASE_0::11",
               "platformFilters" : [
 
@@ -1462,7 +1979,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_5::REF_12",
+              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_6::REF_12",
               "guid" : "PACKAGE-TARGET:NativeStackClient::BUILDPHASE_0::12",
               "platformFilters" : [
 
@@ -1471,7 +1988,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_5::REF_13",
+              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_6::REF_13",
               "guid" : "PACKAGE-TARGET:NativeStackClient::BUILDPHASE_0::13",
               "platformFilters" : [
 
@@ -1480,8 +1997,17 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_5::REF_14",
+              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_6::REF_14",
               "guid" : "PACKAGE-TARGET:NativeStackClient::BUILDPHASE_0::14",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_6::REF_15",
+              "guid" : "PACKAGE-TARGET:NativeStackClient::BUILDPHASE_0::15",
               "platformFilters" : [
 
               ],
@@ -1517,7 +2043,7 @@
       "productTypeIdentifier" : "org.swift.product-type.library.static",
       "type" : "standard"
     },
-    "signature" : "d3aded0e11967040eb13fccc91cd43df0a4c8e4e91320152130518f0d62f5675",
+    "signature" : "643338a127ca0164a00ae83db1cfa18add2711784619292d714acddbce8a9cca",
     "type" : "target"
   },
   {
@@ -1651,7 +2177,7 @@
           "buildFiles" : [
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_7::REF_0",
+              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_8::REF_0",
               "guid" : "PACKAGE-TARGET:NativeStackCLI-6CDEE1A6FC34F043-testable::BUILDPHASE_0::0",
               "platformFilters" : [
 
@@ -1705,7 +2231,291 @@
       "productTypeIdentifier" : "org.swift.product-type.common.object",
       "type" : "standard"
     },
-    "signature" : "0e0d1aff0d0788bf1728542be2277a59c4e8f0bf5b3b0a7bb6ad908f13ea765e",
+    "signature" : "21b84e95fdefa4ebb6610ea7baf04b34786da80dfcb0aa9a7532a8489f2fe475",
+    "type" : "target"
+  },
+  {
+    "contents" : {
+      "approvedByUser" : "true",
+      "buildConfigurations" : [
+        {
+          "buildSettings" : {
+            "DEFINES_MODULE" : "YES",
+            "GENERATE_EMBED_IN_CODE_ACCESSORS" : "YES",
+            "GENERATE_PRELINK_OBJECT_FILE" : "NO",
+            "GENERATE_RESOURCE_ACCESSORS" : "YES",
+            "MODULEMAP_FILE_CONTENTS" : "module NativeStackApp {\nheader \"NativeStackApp-Swift.h\"\nexport *\n}",
+            "MODULEMAP_PATH" : "$(GENERATED_MODULEMAP_DIR)/NativeStackApp.modulemap",
+            "OTHER_SWIFT_FLAGS" : [
+              "$(inherited)",
+              "-Xfrontend",
+              "-entry-point-function-name",
+              "-Xfrontend",
+              "NativeStackApp_main"
+            ],
+            "PACKAGE_RESOURCE_TARGET_KIND" : "regular",
+            "PRODUCT_BUNDLE_IDENTIFIER" : "cartella-senza-nome-4.NativeStackApp",
+            "PRODUCT_MODULE_NAME" : "NativeStackApp",
+            "PRODUCT_NAME" : "$(TARGET_NAME)",
+            "SDKROOT" : "auto",
+            "SDK_VARIANT" : "auto",
+            "STRIP_INSTALLED_PRODUCT" : "NO",
+            "SUPPORTS_TEXT_BASED_API" : "NO",
+            "SWIFT_DISABLE_PARSE_AS_LIBRARY" : "NO",
+            "SWIFT_ENABLE_BARE_SLASH_REGEX" : "NO",
+            "SWIFT_LIBRARIES_ONLY" : "YES",
+            "SWIFT_OBJC_INTERFACE_HEADER_DIR" : "$(GENERATED_MODULEMAP_DIR)",
+            "SWIFT_OBJC_INTERFACE_HEADER_NAME" : "NativeStackApp-Swift.h",
+            "SWIFT_PACKAGE_NAME" : "cartella_senza_nome_4",
+            "SWIFT_VERSION" : "6",
+            "SYMBOL_GRAPH_EXTRACTOR_OUTPUT_DIR" : "$(TARGET_BUILD_DIR)/$(CURRENT_ARCH)/NativeStackApp.symbolgraphs",
+            "TAPI_DYLIB_INSTALL_NAME" : "NativeStackApp",
+            "TARGET_BUILD_DIR" : "$(TARGET_BUILD_DIR)/ExecutableModules",
+            "TARGET_NAME" : "NativeStackApp-6CDEE1A68445508C-testable",
+            "TARGET_TEMP_DIR_SUFFIX" : "-t"
+          },
+          "guid" : "PACKAGE-TARGET:NativeStackApp-6CDEE1A68445508C-testable::BUILDCONFIG_0",
+          "impartedBuildProperties" : {
+            "buildSettings" : {
+              "FRAMEWORK_SEARCH_PATHS" : [
+                "$(BUILT_PRODUCTS_DIR)/PackageFrameworks",
+                "$(inherited)"
+              ],
+              "LD_RUNPATH_SEARCH_PATHS" : [
+                "$(RPATH_ORIGIN)",
+                "$(BUILT_PRODUCTS_DIR)/PackageFrameworks",
+                "$(inherited)"
+              ],
+              "LD_WARN_DUPLICATE_LIBRARIES" : "NO",
+              "LIBRARY_SEARCH_PATHS[__platform_filter=windows-msvc]" : [
+                "$(inherited)",
+                "$(TARGET_BUILD_DIR)/ExecutableModules"
+              ],
+              "OTHER_CFLAGS" : [
+                "-fmodule-map-file=$(GENERATED_MODULEMAP_DIR)/NativeStackApp.modulemap",
+                "$(inherited)"
+              ]
+            }
+          },
+          "name" : "Debug"
+        },
+        {
+          "buildSettings" : {
+            "DEFINES_MODULE" : "YES",
+            "GENERATE_EMBED_IN_CODE_ACCESSORS" : "YES",
+            "GENERATE_PRELINK_OBJECT_FILE" : "NO",
+            "GENERATE_RESOURCE_ACCESSORS" : "YES",
+            "MODULEMAP_FILE_CONTENTS" : "module NativeStackApp {\nheader \"NativeStackApp-Swift.h\"\nexport *\n}",
+            "MODULEMAP_PATH" : "$(GENERATED_MODULEMAP_DIR)/NativeStackApp.modulemap",
+            "OTHER_SWIFT_FLAGS" : [
+              "$(inherited)",
+              "-Xfrontend",
+              "-entry-point-function-name",
+              "-Xfrontend",
+              "NativeStackApp_main"
+            ],
+            "PACKAGE_RESOURCE_TARGET_KIND" : "regular",
+            "PRODUCT_BUNDLE_IDENTIFIER" : "cartella-senza-nome-4.NativeStackApp",
+            "PRODUCT_MODULE_NAME" : "NativeStackApp",
+            "PRODUCT_NAME" : "$(TARGET_NAME)",
+            "SDKROOT" : "auto",
+            "SDK_VARIANT" : "auto",
+            "STRIP_INSTALLED_PRODUCT" : "NO",
+            "SUPPORTS_TEXT_BASED_API" : "NO",
+            "SWIFT_DISABLE_PARSE_AS_LIBRARY" : "NO",
+            "SWIFT_ENABLE_BARE_SLASH_REGEX" : "NO",
+            "SWIFT_LIBRARIES_ONLY" : "YES",
+            "SWIFT_OBJC_INTERFACE_HEADER_DIR" : "$(GENERATED_MODULEMAP_DIR)",
+            "SWIFT_OBJC_INTERFACE_HEADER_NAME" : "NativeStackApp-Swift.h",
+            "SWIFT_PACKAGE_NAME" : "cartella_senza_nome_4",
+            "SWIFT_VERSION" : "6",
+            "SYMBOL_GRAPH_EXTRACTOR_OUTPUT_DIR" : "$(TARGET_BUILD_DIR)/$(CURRENT_ARCH)/NativeStackApp.symbolgraphs",
+            "TAPI_DYLIB_INSTALL_NAME" : "NativeStackApp",
+            "TARGET_BUILD_DIR" : "$(TARGET_BUILD_DIR)/ExecutableModules",
+            "TARGET_NAME" : "NativeStackApp-6CDEE1A68445508C-testable",
+            "TARGET_TEMP_DIR_SUFFIX" : "-t"
+          },
+          "guid" : "PACKAGE-TARGET:NativeStackApp-6CDEE1A68445508C-testable::BUILDCONFIG_1",
+          "impartedBuildProperties" : {
+            "buildSettings" : {
+              "FRAMEWORK_SEARCH_PATHS" : [
+                "$(BUILT_PRODUCTS_DIR)/PackageFrameworks",
+                "$(inherited)"
+              ],
+              "LD_RUNPATH_SEARCH_PATHS" : [
+                "$(RPATH_ORIGIN)",
+                "$(inherited)"
+              ],
+              "LD_WARN_DUPLICATE_LIBRARIES" : "NO",
+              "LIBRARY_SEARCH_PATHS[__platform_filter=windows-msvc]" : [
+                "$(inherited)",
+                "$(TARGET_BUILD_DIR)/ExecutableModules"
+              ],
+              "OTHER_CFLAGS" : [
+                "-fmodule-map-file=$(GENERATED_MODULEMAP_DIR)/NativeStackApp.modulemap",
+                "$(inherited)"
+              ]
+            }
+          },
+          "name" : "Release"
+        }
+      ],
+      "buildPhases" : [
+        {
+          "buildFiles" : [
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_9::REF_0",
+              "guid" : "PACKAGE-TARGET:NativeStackApp-6CDEE1A68445508C-testable::BUILDPHASE_0::0",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_9::REF_1",
+              "guid" : "PACKAGE-TARGET:NativeStackApp-6CDEE1A68445508C-testable::BUILDPHASE_0::1",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_9::REF_2",
+              "guid" : "PACKAGE-TARGET:NativeStackApp-6CDEE1A68445508C-testable::BUILDPHASE_0::2",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_9::REF_3",
+              "guid" : "PACKAGE-TARGET:NativeStackApp-6CDEE1A68445508C-testable::BUILDPHASE_0::3",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_9::REF_4",
+              "guid" : "PACKAGE-TARGET:NativeStackApp-6CDEE1A68445508C-testable::BUILDPHASE_0::4",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_9::REF_5",
+              "guid" : "PACKAGE-TARGET:NativeStackApp-6CDEE1A68445508C-testable::BUILDPHASE_0::5",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_9::REF_6",
+              "guid" : "PACKAGE-TARGET:NativeStackApp-6CDEE1A68445508C-testable::BUILDPHASE_0::6",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_9::REF_7",
+              "guid" : "PACKAGE-TARGET:NativeStackApp-6CDEE1A68445508C-testable::BUILDPHASE_0::7",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_9::REF_8",
+              "guid" : "PACKAGE-TARGET:NativeStackApp-6CDEE1A68445508C-testable::BUILDPHASE_0::8",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_9::REF_9",
+              "guid" : "PACKAGE-TARGET:NativeStackApp-6CDEE1A68445508C-testable::BUILDPHASE_0::9",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_9::REF_10",
+              "guid" : "PACKAGE-TARGET:NativeStackApp-6CDEE1A68445508C-testable::BUILDPHASE_0::10",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_9::REF_11",
+              "guid" : "PACKAGE-TARGET:NativeStackApp-6CDEE1A68445508C-testable::BUILDPHASE_0::11",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_9::REF_12",
+              "guid" : "PACKAGE-TARGET:NativeStackApp-6CDEE1A68445508C-testable::BUILDPHASE_0::12",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            }
+          ],
+          "guid" : "PACKAGE-TARGET:NativeStackApp-6CDEE1A68445508C-testable::BUILDPHASE_0",
+          "type" : "com.apple.buildphase.sources"
+        }
+      ],
+      "buildRules" : [
+
+      ],
+      "customTasks" : [
+
+      ],
+      "dependencies" : [
+        {
+          "guid" : "PACKAGE-TARGET:NativeStackCore",
+          "platformFilters" : [
+
+          ]
+        },
+        {
+          "guid" : "PACKAGE-TARGET:NativeStackClient",
+          "platformFilters" : [
+
+          ]
+        }
+      ],
+      "guid" : "PACKAGE-TARGET:NativeStackApp-6CDEE1A68445508C-testable",
+      "name" : "NativeStackApp",
+      "productReference" : {
+        "guid" : "PRODUCTREF-PACKAGE-TARGET:NativeStackApp-6CDEE1A68445508C-testable",
+        "name" : "$(EXECUTABLE_NAME)",
+        "type" : "file"
+      },
+      "productTypeIdentifier" : "org.swift.product-type.common.object",
+      "type" : "standard"
+    },
+    "signature" : "7e624fa99f9c55a5f28da032314d52f16e2287997f228656535a00527e3238a6",
     "type" : "target"
   },
   {
@@ -1819,7 +2629,7 @@
           "buildFiles" : [
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_8::REF_0",
+              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_10::REF_0",
               "guid" : "PACKAGE-TARGET:NativeStackAPIServer::BUILDPHASE_0::0",
               "platformFilters" : [
 
@@ -1828,7 +2638,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_8::REF_1",
+              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_10::REF_1",
               "guid" : "PACKAGE-TARGET:NativeStackAPIServer::BUILDPHASE_0::1",
               "platformFilters" : [
 
@@ -1837,7 +2647,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_8::REF_2",
+              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_10::REF_2",
               "guid" : "PACKAGE-TARGET:NativeStackAPIServer::BUILDPHASE_0::2",
               "platformFilters" : [
 
@@ -1846,7 +2656,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_8::REF_3",
+              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_10::REF_3",
               "guid" : "PACKAGE-TARGET:NativeStackAPIServer::BUILDPHASE_0::3",
               "platformFilters" : [
 
@@ -1889,7 +2699,7 @@
       "productTypeIdentifier" : "org.swift.product-type.library.static",
       "type" : "standard"
     },
-    "signature" : "9e9e13293db75798b708ef85b26528895e2e110771cbf06b1a6fa85eaddfe83a",
+    "signature" : "9e13fce17d569f879b8b8ae640abbfe6d93d9bd2c2efb76995ac0cbb9534b96b",
     "type" : "target"
   },
   {
@@ -2048,7 +2858,7 @@
           "buildFiles" : [
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_4::REF_0",
+              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_5::REF_0",
               "guid" : "PACKAGE-TARGET:NativeStackCore--5CBE6F2DAB248E0B-dynamic::BUILDPHASE_0::0",
               "platformFilters" : [
 
@@ -2057,7 +2867,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_4::REF_1",
+              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_5::REF_1",
               "guid" : "PACKAGE-TARGET:NativeStackCore--5CBE6F2DAB248E0B-dynamic::BUILDPHASE_0::1",
               "platformFilters" : [
 
@@ -2066,7 +2876,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_4::REF_2",
+              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_5::REF_2",
               "guid" : "PACKAGE-TARGET:NativeStackCore--5CBE6F2DAB248E0B-dynamic::BUILDPHASE_0::2",
               "platformFilters" : [
 
@@ -2075,7 +2885,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_4::REF_3",
+              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_5::REF_3",
               "guid" : "PACKAGE-TARGET:NativeStackCore--5CBE6F2DAB248E0B-dynamic::BUILDPHASE_0::3",
               "platformFilters" : [
 
@@ -2106,7 +2916,7 @@
       "productTypeIdentifier" : "com.apple.product-type.library.dynamic",
       "type" : "standard"
     },
-    "signature" : "80957db33e2df0e16774f399a0bafda37209f0b53fd7f068498e5e98d2b0e25c",
+    "signature" : "7980ae127e2434b118807d02ec51081bf0d024ffab8dc332adbec9ec0458c6d5",
     "type" : "target"
   },
   {
@@ -2218,7 +3028,7 @@
           "buildFiles" : [
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_6::REF_0",
+              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_7::REF_0",
               "guid" : "PACKAGE-TARGET:NativeStackClient--27186667A8C8BA33-dynamic::BUILDPHASE_0::0",
               "platformFilters" : [
 
@@ -2227,7 +3037,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_6::REF_1",
+              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_7::REF_1",
               "guid" : "PACKAGE-TARGET:NativeStackClient--27186667A8C8BA33-dynamic::BUILDPHASE_0::1",
               "platformFilters" : [
 
@@ -2236,7 +3046,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_6::REF_2",
+              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_7::REF_2",
               "guid" : "PACKAGE-TARGET:NativeStackClient--27186667A8C8BA33-dynamic::BUILDPHASE_0::2",
               "platformFilters" : [
 
@@ -2245,7 +3055,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_6::REF_3",
+              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_7::REF_3",
               "guid" : "PACKAGE-TARGET:NativeStackClient--27186667A8C8BA33-dynamic::BUILDPHASE_0::3",
               "platformFilters" : [
 
@@ -2254,7 +3064,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_6::REF_4",
+              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_7::REF_4",
               "guid" : "PACKAGE-TARGET:NativeStackClient--27186667A8C8BA33-dynamic::BUILDPHASE_0::4",
               "platformFilters" : [
 
@@ -2263,7 +3073,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_6::REF_5",
+              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_7::REF_5",
               "guid" : "PACKAGE-TARGET:NativeStackClient--27186667A8C8BA33-dynamic::BUILDPHASE_0::5",
               "platformFilters" : [
 
@@ -2272,7 +3082,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_6::REF_6",
+              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_7::REF_6",
               "guid" : "PACKAGE-TARGET:NativeStackClient--27186667A8C8BA33-dynamic::BUILDPHASE_0::6",
               "platformFilters" : [
 
@@ -2281,7 +3091,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_6::REF_7",
+              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_7::REF_7",
               "guid" : "PACKAGE-TARGET:NativeStackClient--27186667A8C8BA33-dynamic::BUILDPHASE_0::7",
               "platformFilters" : [
 
@@ -2290,7 +3100,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_6::REF_8",
+              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_7::REF_8",
               "guid" : "PACKAGE-TARGET:NativeStackClient--27186667A8C8BA33-dynamic::BUILDPHASE_0::8",
               "platformFilters" : [
 
@@ -2299,7 +3109,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_6::REF_9",
+              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_7::REF_9",
               "guid" : "PACKAGE-TARGET:NativeStackClient--27186667A8C8BA33-dynamic::BUILDPHASE_0::9",
               "platformFilters" : [
 
@@ -2308,7 +3118,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_6::REF_10",
+              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_7::REF_10",
               "guid" : "PACKAGE-TARGET:NativeStackClient--27186667A8C8BA33-dynamic::BUILDPHASE_0::10",
               "platformFilters" : [
 
@@ -2317,7 +3127,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_6::REF_11",
+              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_7::REF_11",
               "guid" : "PACKAGE-TARGET:NativeStackClient--27186667A8C8BA33-dynamic::BUILDPHASE_0::11",
               "platformFilters" : [
 
@@ -2326,7 +3136,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_6::REF_12",
+              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_7::REF_12",
               "guid" : "PACKAGE-TARGET:NativeStackClient--27186667A8C8BA33-dynamic::BUILDPHASE_0::12",
               "platformFilters" : [
 
@@ -2335,7 +3145,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_6::REF_13",
+              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_7::REF_13",
               "guid" : "PACKAGE-TARGET:NativeStackClient--27186667A8C8BA33-dynamic::BUILDPHASE_0::13",
               "platformFilters" : [
 
@@ -2344,8 +3154,17 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_6::REF_14",
+              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_7::REF_14",
               "guid" : "PACKAGE-TARGET:NativeStackClient--27186667A8C8BA33-dynamic::BUILDPHASE_0::14",
+              "platformFilters" : [
+
+              ],
+              "removeHeadersOnCopy" : "false"
+            },
+            {
+              "codeSignOnCopy" : "false",
+              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_7::REF_15",
+              "guid" : "PACKAGE-TARGET:NativeStackClient--27186667A8C8BA33-dynamic::BUILDPHASE_0::15",
               "platformFilters" : [
 
               ],
@@ -2393,7 +3212,7 @@
       "productTypeIdentifier" : "com.apple.product-type.library.dynamic",
       "type" : "standard"
     },
-    "signature" : "a924768d772326eb6da487e86bd3f4149fec9e968c6b6921c035309d112ef4f4",
+    "signature" : "62f79e35a963249a5efb03bbebb21228a9eb0e367e3bf94952260d6f4db8faec",
     "type" : "target"
   },
   {
@@ -2505,7 +3324,7 @@
           "buildFiles" : [
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_9::REF_0",
+              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_11::REF_0",
               "guid" : "PACKAGE-TARGET:NativeStackAPIServer--5E96E2F2D6AEDD3E-dynamic::BUILDPHASE_0::0",
               "platformFilters" : [
 
@@ -2514,7 +3333,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_9::REF_1",
+              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_11::REF_1",
               "guid" : "PACKAGE-TARGET:NativeStackAPIServer--5E96E2F2D6AEDD3E-dynamic::BUILDPHASE_0::1",
               "platformFilters" : [
 
@@ -2523,7 +3342,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_9::REF_2",
+              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_11::REF_2",
               "guid" : "PACKAGE-TARGET:NativeStackAPIServer--5E96E2F2D6AEDD3E-dynamic::BUILDPHASE_0::2",
               "platformFilters" : [
 
@@ -2532,7 +3351,7 @@
             },
             {
               "codeSignOnCopy" : "false",
-              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_9::REF_3",
+              "fileReference" : "PACKAGE:cartella senza nome 4::MAINGROUP::REF_11::REF_3",
               "guid" : "PACKAGE-TARGET:NativeStackAPIServer--5E96E2F2D6AEDD3E-dynamic::BUILDPHASE_0::3",
               "platformFilters" : [
 
@@ -2594,7 +3413,7 @@
       "productTypeIdentifier" : "com.apple.product-type.library.dynamic",
       "type" : "standard"
     },
-    "signature" : "134887822f6fe7ade981ba98520d89f1aa61c0ddc1541ba29a3fd83eb3422b59",
+    "signature" : "34ea88b36abe41b56d78a97052fdef72ecfa3b9be6ff0e7ed2484f3e541bba48",
     "type" : "target"
   },
   {
@@ -7500,11 +8319,11 @@
       "projectIsPackage" : "true",
       "projectName" : "Aggregate",
       "targets" : [
-        "aadb5e26e75bfa1511024f12d17d3fa82088fc632e1bc7fc94fddd7d20be1dda",
-        "5306bc5c65aad0e9dae7edc4fe74323aabbc999f6eb032e4614e2cc8ac14bc70"
+        "ae8a2837089e07883ad9148c9a75f932b220fd9851a650b207956c8f1b90c129",
+        "a3b19444999236178265df40a483856ba6e70f096cb40892459e5e2314997dd7"
       ]
     },
-    "signature" : "2d61f638033eccb6753938a7c0e752465ebf457fd33bc81ad183bcadfb3170b9",
+    "signature" : "0b052675fa652a2c52cba81e0ff74facf868d5be583dba54cb042645d9018798",
     "type" : "project"
   },
   {
@@ -7564,6 +8383,12 @@
           ]
         },
         {
+          "guid" : "PACKAGE-PRODUCT:cartella senza nome 4_NativeStackApp.NativeStackApp",
+          "platformFilters" : [
+
+          ]
+        },
+        {
           "guid" : "PACKAGE-TARGET:NativeStackCore",
           "platformFilters" : [
 
@@ -7582,6 +8407,12 @@
           ]
         },
         {
+          "guid" : "PACKAGE-TARGET:NativeStackApp-6CDEE1A68445508C-testable",
+          "platformFilters" : [
+
+          ]
+        },
+        {
           "guid" : "PACKAGE-TARGET:NativeStackAPIServer",
           "platformFilters" : [
 
@@ -7592,7 +8423,7 @@
       "name" : "AllIncludingTests",
       "type" : "aggregate"
     },
-    "signature" : "aadb5e26e75bfa1511024f12d17d3fa82088fc632e1bc7fc94fddd7d20be1dda",
+    "signature" : "ae8a2837089e07883ad9148c9a75f932b220fd9851a650b207956c8f1b90c129",
     "type" : "target"
   },
   {
@@ -7652,6 +8483,12 @@
           ]
         },
         {
+          "guid" : "PACKAGE-PRODUCT:cartella senza nome 4_NativeStackApp.NativeStackApp",
+          "platformFilters" : [
+
+          ]
+        },
+        {
           "guid" : "PACKAGE-TARGET:NativeStackCore",
           "platformFilters" : [
 
@@ -7670,6 +8507,12 @@
           ]
         },
         {
+          "guid" : "PACKAGE-TARGET:NativeStackApp-6CDEE1A68445508C-testable",
+          "platformFilters" : [
+
+          ]
+        },
+        {
           "guid" : "PACKAGE-TARGET:NativeStackAPIServer",
           "platformFilters" : [
 
@@ -7680,7 +8523,7 @@
       "name" : "AllExcludingTests",
       "type" : "aggregate"
     },
-    "signature" : "5306bc5c65aad0e9dae7edc4fe74323aabbc999f6eb032e4614e2cc8ac14bc70",
+    "signature" : "a3b19444999236178265df40a483856ba6e70f096cb40892459e5e2314997dd7",
     "type" : "target"
   }
 ]

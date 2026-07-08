@@ -88,11 +88,45 @@ public final class APIServer: @unchecked Sendable {
             return
         }
 
+        if request.method == "GET",
+           request.path.hasPrefix("/api/containers/"),
+           request.path.hasSuffix("/logs/stream") {
+            let prefix = request.path.dropFirst("/api/containers/".count)
+            let id = String(prefix.dropLast("/logs/stream".count))
+            await streamLogs(id: id, clientFD: clientFD)
+            return
+        }
+
         let response = await router.handle(request)
         let serialized = response.serialize()
         _ = serialized.withUnsafeBytes { rawBuffer in
             guard let base = rawBuffer.baseAddress else { return 0 }
             return write(clientFD, base, serialized.count)
+        }
+    }
+
+    private func streamLogs(id: String, clientFD: Int32) async {
+        let headers = [
+            "HTTP/1.1 200 OK",
+            "Content-Type: text/event-stream",
+            "Cache-Control: no-cache",
+            "Connection: keep-alive",
+            "Access-Control-Allow-Origin: *",
+            "",
+            "",
+        ].joined(separator: "\r\n")
+        guard writeAll(clientFD, Data(headers.utf8)) else { return }
+
+        for await line in await router.logStream(forContainer: id) {
+            let escaped = line.text.replacingOccurrences(of: "\n", with: "\\n")
+            guard writeAll(clientFD, Data("data: \(escaped)\n\n".utf8)) else { return }
+        }
+    }
+
+    private func writeAll(_ fd: Int32, _ data: Data) -> Bool {
+        data.withUnsafeBytes { rawBuffer in
+            guard let base = rawBuffer.baseAddress else { return true }
+            return write(fd, base, data.count) == data.count
         }
     }
 }

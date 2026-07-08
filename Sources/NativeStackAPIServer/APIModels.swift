@@ -41,6 +41,18 @@ struct APIPullImageRequest: Codable, Sendable {
     var reference: String
 }
 
+struct APIComposeEnvResponse: Codable, Sendable {
+    var contents: String
+}
+
+struct APIComposeEnvBody: Codable, Sendable {
+    var contents: String
+}
+
+struct APIAutoStartBody: Codable, Sendable {
+    var enabled: Bool
+}
+
 struct APIDockerStatusResponse: Codable, Sendable {
     var status: DockerCompatibilityStatus
     var phase: String

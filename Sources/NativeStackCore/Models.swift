@@ -25,6 +25,7 @@ public struct ContainerRecord: Identifiable, Codable, Sendable, Hashable {
     public var composeService: String?
     public var mounts: [String]
     public var platform: String?
+    public var autoStart: Bool
 
     public init(
         id: String,
@@ -38,7 +39,8 @@ public struct ContainerRecord: Identifiable, Codable, Sendable, Hashable {
         composeProject: String? = nil,
         composeService: String? = nil,
         mounts: [String] = [],
-        platform: String? = nil
+        platform: String? = nil,
+        autoStart: Bool = false
     ) {
         self.id = id
         self.name = name
@@ -52,6 +54,7 @@ public struct ContainerRecord: Identifiable, Codable, Sendable, Hashable {
         self.composeService = composeService
         self.mounts = mounts
         self.platform = platform
+        self.autoStart = autoStart
     }
 
     public var displayName: String {

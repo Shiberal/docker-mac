@@ -1,0 +1,16 @@
+.DS_Store
+.build/
+*.xcuserstate
+*.swp
+*~
+
+# React Native / GUI
+gui/node_modules/
+gui/macos/Pods/
+gui/macos/build/
+gui/ios/build/
+gui/android/build/
+gui/.bundle/
+
+# Local Homebrew test artifacts
+*.brewing

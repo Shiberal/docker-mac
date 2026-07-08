@@ -104,6 +104,56 @@ nativestack compose up -d   # still uses docker-compose.local.yml; patches mysql
 
 If you use plain `docker compose`, pass the same `-f` flags for both up and down.
 
+## Install with Homebrew
+
+NativeStack ships a Homebrew formula in `Formula/nativestack.rb`.
+
+### From GitHub (recommended once published)
+
+Replace `YOUR_GITHUB_USER` with your GitHub username or org, then update the `homepage`, `url`, `head`, and `sha256` fields in `Formula/nativestack.rb` to match your repository.
+
+```bash
+brew tap YOUR_GITHUB_USER/nativestack https://github.com/YOUR_GITHUB_USER/nativestack
+brew install nativestack
+```
+
+Apple's container runtime is recommended but optional at install time:
+
+```bash
+brew install container
+container system start
+```
+
+### From a local checkout (development)
+
+Commit `Formula/nativestack.rb` first — `brew tap` clones from git and only sees committed files.
+
+```bash
+cd /path/to/nativestack
+brew tap nativestack/tap "$(pwd)"
+brew install --build-from-source nativestack/tap/nativestack
+```
+
+The formula builds the `nativestack` CLI from source on your machine (Swift ABI). After install:
+
+```bash
+nativestack system start
+nativestack serve          # API for the React Native GUI
+```
+
+### Publishing a stable release
+
+When tagging a release, refresh the tarball checksum in the formula:
+
+```bash
+git tag v0.2.0
+git archive --format=tar.gz --prefix=nativestack-0.2.0/ -o nativestack-0.2.0.tar.gz v0.2.0
+shasum -a 256 nativestack-0.2.0.tar.gz
+# Paste the sha256 into Formula/nativestack.rb
+```
+
+Push the tag to GitHub, then users can `brew install nativestack` without `--build-from-source`.
+
 ## Build NativeStack
 
 ```bash
@@ -182,6 +232,7 @@ Sources/
 └── NativeStackApp/          # legacy SwiftUI app (not built by default)
 
 gui/                         # React Native macOS app
+Formula/nativestack.rb       # Homebrew formula
 scripts/run-gui.sh           # start API + launch GUI
 ```
 

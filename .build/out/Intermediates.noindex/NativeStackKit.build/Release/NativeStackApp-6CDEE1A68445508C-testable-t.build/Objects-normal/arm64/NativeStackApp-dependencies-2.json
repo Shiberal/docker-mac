@@ -216,462 +216,462 @@
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/Accessibility.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/Accessibility-E1LNZX2UAEJEL5PMBW3Z6TUWW.pcm",
+    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/Accessibility-4BEBR3SDFG9DPSS635EII1L00.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "Accessibility"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/AppKit.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/AppKit-73B3MLEN1BV54SQQ1UGYGFAEB.pcm",
+    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/AppKit-APGMOQMMO009TEQXQY268WFDC.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "AppKit"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/ApplicationServices.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/ApplicationServices-BGZHV1NKLOMSGKJU65JGAABK0.pcm",
+    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/ApplicationServices-CQBF8MGDFBG9VE67V85MEIZ9E.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "ApplicationServices"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/CFNetwork.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/CFNetwork-8VDDURNPD7PHV8ISWYSZ0SO11.pcm",
+    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/CFNetwork-AZ335KP72MEDOEBDERDRRW2SQ.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "CFNetwork"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/usr\/include\/cups.modulemap",
-    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/CUPS-3000UB1OTFYA4WF3CF0L3SB49.pcm",
+    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/CUPS-6UDI4AC7MT9S1MXFHZBIC8F2F.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "CUPS"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/ColorSync.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/ColorSync-C0E9AGVGLGMN23ITZZQ9TWPEZ.pcm",
+    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/ColorSync-20WB2DC0WXNRZB133EJ51PV8J.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "ColorSync"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/CoreAudio.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/CoreAudio-7DD1XIOVJFGEZLTPTES1X7TN4.pcm",
+    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/CoreAudio-66T27YK7494TI4X9W0S4H291N.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "CoreAudio"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/CoreAudioTypes.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/CoreAudioTypes-33Z9RNWM1QWYQ3BSB1FLYQ8QR.pcm",
+    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/CoreAudioTypes-ED66AVEZKK6YWROZEO0GY1LLS.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "CoreAudioTypes"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/CoreData.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/CoreData-8VSTOXP9CSD9FTFDG5U0TD75T.pcm",
+    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/CoreData-7V0UCN5SEEVG13YQDXOX0YXV6.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "CoreData"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/CoreFoundation.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/CoreFoundation-2MBW0Y5D9PLTLFUZT450PKMI7.pcm",
+    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/CoreFoundation-3E5UIGP92NEY29FHALNWTLTOF.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "CoreFoundation"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/CoreGraphics.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/CoreGraphics-7JZ37KBPZN5WV5J32CYQATVMC.pcm",
+    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/CoreGraphics-93514KT0FOQ0NY2IDG69YJH6Y.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "CoreGraphics"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/CoreImage.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/CoreImage-4QJ2ZJNI334E08DQKUN7NRO3.pcm",
+    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/CoreImage-A1IU7DDKMFGURC7A28HEYZ6SY.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "CoreImage"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/CoreMedia.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/CoreMedia-77DUK3D6XY2GFGZ5XBK9VP1ML.pcm",
+    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/CoreMedia-RAY95G94RXM5PAIR8U53U2RG.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "CoreMedia"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/CoreServices.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/CoreServices-4Q99YKOUP9PDS8VN2W5O3SZIV.pcm",
+    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/CoreServices-2HK8L1FX6L7BSB87KKXKN9ZL1.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "CoreServices"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/CoreText.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/CoreText-43QLZ68158SGIIFKGZ541IPKW.pcm",
+    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/CoreText-BOA7GZ2I4RSAS51TL43L2VZ99.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "CoreText"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/CoreTransferable.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/CoreTransferable-E9DYS2AKPIU6X5GH2MHLC8ZYU.pcm",
+    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/CoreTransferable-DCH3HXR0ARVST3HO66FOXED8C.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "CoreTransferable"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/CoreVideo.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/CoreVideo-584Q4UYPKVRUAU7YNVL37UXMK.pcm",
+    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/CoreVideo-4TTG0NX2GQJIOY132JG5LDQV2.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "CoreVideo"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/usr\/include\/Darwin.modulemap",
-    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/Darwin-9X902AX0CYMWDWUGV6M2XPN9I.pcm",
+    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/Darwin-3F3YX39OQAK8VLO32Q8R2CF79.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "Darwin"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/DataDetection.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/DataDetection-51MH4AB466ROTNVW2KYQF41D2.pcm",
+    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/DataDetection-88SIISOXD39YG1M9WDYBRAZ85.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "DataDetection"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/DeveloperToolsSupport.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/DeveloperToolsSupport-4EP6O7M22O03YOSVCUA2RRDMO.pcm",
+    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/DeveloperToolsSupport-558RQX8ZCL6P3IJ1A7ZVLAB8D.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "DeveloperToolsSupport"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/DiskArbitration.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/DiskArbitration-9W06SXG2CJ56ZVQ5YNO0HT7JG.pcm",
+    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/DiskArbitration-7ZMZAQW0NAVTJIYY0V3GLKZ7.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "DiskArbitration"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/usr\/include\/dispatch.modulemap",
-    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/Dispatch-B4C8NPK1I5EYP7OILULNHR94L.pcm",
+    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/Dispatch-X26UY13RY4VSGS3QRG15PSV1.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "Dispatch"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/Foundation.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/Foundation-C9NR98DDJIRE3HLU0YUZZD0QK.pcm",
+    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/Foundation-27JJMG2QHVLMAXRBQ73WQFFXD.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "Foundation"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/IOKit.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/IOKit-2O1JSRJUL421M67Y5FS5XHWRE.pcm",
+    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/IOKit-EFADSMU5MV3WXUTFAK5X6K0WK.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "IOKit"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/IOSurface.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/IOSurface-6NEVJA0ZLFI9AWUCPBYF3YZWD.pcm",
+    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/IOSurface-1LFR4T6JUKJVANYAKJ4ZRN78O.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "IOSurface"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/ImageIO.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/ImageIO-9W2QH37IY54HP6LE1L4VUKBUO.pcm",
+    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/ImageIO-7UY5HZA36NIP3J0F0KLVNHFMP.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "ImageIO"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/usr\/include\/DarwinBasic.modulemap",
-    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/MachO-3LBDBQ5VTFELCJY5U9U7XAZ9G.pcm",
+    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/MachO-5939DQF9H8EZKIP2MNOATJBEV.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "MachO"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/Metal.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/Metal-EG0ALYNC2KZ83PMM5FJ610JC1.pcm",
+    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/Metal-2VOOE3QCKT5SPH6NTHAC97KNM.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "Metal"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/OSLog.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/OSLog-7DN9WTVDTDUIPU894BCVE0K6H.pcm",
+    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/OSLog-7ACLC09FYHKX1Y0P5MUB2SSGA.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "OSLog"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/usr\/include\/ObjectiveC.modulemap",
-    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/ObjectiveC-B86C9PFE7VJDF479DN3X6RZUM.pcm",
+    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/ObjectiveC-5DY8VOF9709VNDTTXUYDD1FPL.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "ObjectiveC"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/OpenGL.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/OpenGL-7CI6R5L6ZG4HGVO2VO7D3N695.pcm",
+    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/OpenGL-D7FGQ9BFB08JW55OQS6144WH6.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "OpenGL"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/QuartzCore.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/QuartzCore-AEBMDZLSREJMQE9WGFPEHUXBR.pcm",
+    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/QuartzCore-3EE5HPGUWY88LOUJVN9IJO7UV.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "QuartzCore"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/Security.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/Security-CASMC1SCVOTHMUHAAYXPN047J.pcm",
+    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/Security-6JA53DFYS6ADPO1MYCSUGX0A9.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "Security"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/usr\/include\/Spatial\/module.modulemap",
-    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/Spatial-DZJUSWVWZYBMHWFU0LN3PJK2C.pcm",
+    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/Spatial-1UW4PD33Y58HCQ6Q7399RSGEY.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "Spatial"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/usr\/lib\/swift\/shims\/module.modulemap",
-    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/SwiftShims-EXJ1CB5K0YFGLH4D0NWUZWJLV.pcm",
+    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/SwiftShims-43VM4R19RF6GDOGIGN4DST0NV.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "SwiftShims"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/SwiftUI.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/SwiftUI-A11E1L1NNDLR1MYWGH5RN34T.pcm",
+    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/SwiftUI-87PBV074LNYJ5OQ022IJOUU0X.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "SwiftUI"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/SwiftUICore.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/SwiftUICore-5PBMYVIFXE2X9BVPTBQTT7I57.pcm",
+    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/SwiftUICore-BXS1TJWPK2Z25VIUNM2MH36JQ.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "SwiftUICore"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/Symbols.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/Symbols-978588W51CU4WXE5EZBPI30LX.pcm",
+    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/Symbols-CAJZV4PJ0XLMJBXYQ87J2OXRX.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "Symbols"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/System\/Library\/Frameworks\/UniformTypeIdentifiers.framework\/Modules\/module.modulemap",
-    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/UniformTypeIdentifiers-96C9KJYYKE3E99LZQ1J7KA6W0.pcm",
+    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/UniformTypeIdentifiers-EWQ8OV0REVF46T4O0MQL4VXPD.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "UniformTypeIdentifiers"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/usr\/include\/xpc.modulemap",
-    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/XPC-7ZKZ43WBI8RJPOBATSGIS4PBN.pcm",
+    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/XPC-EKEJNWGPVTXKZ7B0X403T9TXN.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "XPC"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/usr\/include\/DarwinFoundation1.modulemap",
-    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/_AvailabilityInternal-627YBGNZV297QV1JRY0NQKSKO.pcm",
+    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/_AvailabilityInternal-BFS7R9SF4ETEMIFWSAHHHWHGN.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_AvailabilityInternal"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/clang\/21\/include\/module.modulemap",
-    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/_Builtin_float-D21VSERWBTVPPDU9C4HMT52Z9.pcm",
+    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/_Builtin_float-3RJP2XGNVEZH1PI8OB7BJTNUV.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_Builtin_float"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/clang\/21\/include\/module.modulemap",
-    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/_Builtin_intrinsics-ETSVDXUYG3CTQPUC8B999L1Q9.pcm",
+    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/_Builtin_intrinsics-CL4OPWBBPFK0UAGAOZZ95PRQX.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_Builtin_intrinsics"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/clang\/21\/include\/module.modulemap",
-    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/_Builtin_inttypes-EXRI9OD531HMNO9XHFAOYWS93.pcm",
+    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/_Builtin_inttypes-DR7WW3EQLW6206A9S962PMGPF.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_Builtin_inttypes"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/clang\/21\/include\/module.modulemap",
-    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/_Builtin_limits-DV2KU71YK7UD7DCN8O955F8PV.pcm",
+    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/_Builtin_limits-CM0ZAIACK83I8BLWM20AYF4DV.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_Builtin_limits"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/clang\/21\/include\/module.modulemap",
-    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/_Builtin_stdarg-3445D4H21YP2CRJITVGKUJ9TH.pcm",
+    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/_Builtin_stdarg-38JNIEWFOU8Q174Y74JIVHTJX.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_Builtin_stdarg"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/clang\/21\/include\/module.modulemap",
-    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/_Builtin_stdatomic-7YIEEBEBU22TLUIQ5BIHBHGZC.pcm",
+    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/_Builtin_stdatomic-6WK2JMQADITUVAX70K75TYUHY.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_Builtin_stdatomic"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/clang\/21\/include\/module.modulemap",
-    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/_Builtin_stdbool-4TM6FOCJ2TBTZG38VE8ECUE6I.pcm",
+    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/_Builtin_stdbool-393Y6JZJNGP33N54CVSAY2J0G.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_Builtin_stdbool"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/clang\/21\/include\/module.modulemap",
-    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/_Builtin_stddef-7GP15VLFZO02V5KF4NLJZO7FW.pcm",
+    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/_Builtin_stddef-9N3PPT5WP0FOXR7BEPAPOTXBC.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_Builtin_stddef"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/clang\/21\/include\/module.modulemap",
-    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/_Builtin_stdint-DE3WMEIRHP7FQIQZCM2L736WI.pcm",
+    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/_Builtin_stdint-44Y44IZJ32620E3OS95E8BUX8.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_Builtin_stdint"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/clang\/21\/include\/module.modulemap",
-    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/_Builtin_tgmath-AZ3PWAK66R89UXZLW240E3RHS.pcm",
+    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/_Builtin_tgmath-C0S3KCAXBXF3SDKWFWWQBQJCK.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_Builtin_tgmath"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/usr\/include\/DarwinFoundation1.modulemap",
-    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/_DarwinFoundation1-3Q50JE3V13T1Q6GLVZU3NWXJC.pcm",
+    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/_DarwinFoundation1-EYGUO3Y0XY93PF8VFAK7XUN79.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_DarwinFoundation1"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/usr\/include\/DarwinFoundation2.modulemap",
-    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/_DarwinFoundation2-EW18F4ZVKWVLYT652NNHDKBZC.pcm",
+    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/_DarwinFoundation2-AX2WA09X4E4D1BRII0B3AYMDB.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_DarwinFoundation2"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/usr\/include\/DarwinFoundation3.modulemap",
-    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/_DarwinFoundation3-F05QP6Z0GYRKEHDIO8QW59HN4.pcm",
+    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/_DarwinFoundation3-C3UGCQJRN37N2KDJ5M8Y715PH.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_DarwinFoundation3"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/usr\/lib\/swift\/shims\/module.modulemap",
-    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/_SwiftConcurrencyShims-8JCQ3BPHE9LHG2GXTUP8DV579.pcm",
+    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/_SwiftConcurrencyShims-6G14ZK65P05HYN772WYCOYMY3.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "_SwiftConcurrencyShims"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/usr\/include\/launch.modulemap",
-    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/launch-6U2BJSB2ZZ5OXY2BC1XRLERJS.pcm",
+    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/launch-DPVAPHW2O4VCUHMD31XN2D3VA.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "launch"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/usr\/include\/libDER\/module.modulemap",
-    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/libDER-485D38C7ZCSCP8DQ3EG0UP0T6.pcm",
+    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/libDER-CB1CX0YF0KGT2XV8YCX0DOPDC.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "libDER"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/usr\/include\/libkern.modulemap",
-    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/libkern-HBCHZ2VZISDCTHBNFR3KOM55.pcm",
+    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/libkern-ATKF5Z6Q8L4GPO4WQSSYXLNP9.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "libkern"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/usr\/include\/os.modulemap",
-    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/os-EAK5PKC804SI2COOH61CWYF92.pcm",
+    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/os-4WVBV0N0GH7IPQGVI10SR8IHI.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "os"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/usr\/include\/os.modulemap",
-    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/os_object-CKKPESK6EKV3NELMRFUTFA1RB.pcm",
+    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/os_object-BUWBXWGXKX80J5EQEGP9OUXEU.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "os_object"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/usr\/include\/os.modulemap",
-    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/os_workgroup-141U5D45IQTXLCMZ960JQ2UG2.pcm",
+    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/os_workgroup-6D6NEWJMTWLRISAIT3SNJOAG.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "os_workgroup"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/clang\/21\/include\/module.modulemap",
-    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/ptrauth-8RT76B7FQBH79UQEETLMXDPKJ.pcm",
+    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/ptrauth-4I525SYDAO6J9G4OB60YVZ79W.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "ptrauth"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Toolchains\/XcodeDefault.xctoolchain\/usr\/lib\/clang\/21\/include\/module.modulemap",
-    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/ptrcheck-AMGTKH4VM2UIAG4C0AS7YOJWW.pcm",
+    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/ptrcheck-C26TM2QFG9LEJL7UF28LUFE6Z.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "ptrcheck"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/usr\/include\/simd\/module.modulemap",
-    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/simd-10EULZYE6TKMMHA0KKGDOC3KG.pcm",
+    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/simd-8TQKSYYC2IE76YEMPG5GONTSZ.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "simd"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/usr\/include\/c_standard_library.modulemap",
-    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/string_h-B1APZCPWKM9HHIJNDX2OVQGBA.pcm",
+    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/string_h-SRNCL6K3HUC8777RGS6EDMS4.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "string_h"
   },
   {
     "clangModuleMapPath" : "\/Applications\/Xcode.app\/Contents\/Developer\/Platforms\/MacOSX.platform\/Developer\/SDKs\/MacOSX.sdk\/usr\/include\/DarwinFoundation2.modulemap",
-    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/sys_types-8WMU89MBMQYBVESF67TUVMBTX.pcm",
+    "clangModulePath" : "\/Users\/shiberal\/Desktop\/cartella senza nome 4\/.build\/out\/ModuleCache.noindex\/sys_types-1TX2ZEH39WDR8OCJOMKVFU641.pcm",
     "isBridgingHeaderDependency" : false,
     "isFramework" : false,
     "moduleName" : "sys_types"

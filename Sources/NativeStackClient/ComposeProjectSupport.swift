@@ -143,6 +143,24 @@ enum ComposeProjectSupport {
         )
     }
 
+    /// Looks up the remembered working directory for a Compose project name, if any
+    /// `nativestack compose up` session was recorded for it.
+    static func workingDirectory(forProject projectName: String) -> String? {
+        guard let names = try? FileManager.default.contentsOfDirectory(atPath: sessionsDirectory) else {
+            return nil
+        }
+        for name in names where name.hasSuffix(".json") {
+            let path = (sessionsDirectory as NSString).appendingPathComponent(name)
+            guard let data = try? Data(contentsOf: URL(fileURLWithPath: path)),
+                  let session = try? JSONDecoder().decode(ComposeSession.self, from: data),
+                  session.projectName == projectName else {
+                continue
+            }
+            return session.workingDirectory
+        }
+        return nil
+    }
+
     // MARK: - Session
 
     private struct ComposeSession: Codable {

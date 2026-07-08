@@ -26,6 +26,16 @@
     "swift-dependencies" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Debug/NativeStackClient-t.build/Objects-normal/arm64/AppSettingsStore.swiftdeps",
     "swiftmodule" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Debug/NativeStackClient-t.build/Objects-normal/arm64/AppSettingsStore~partial.swiftmodule"
   },
+  "/Users/shiberal/Desktop/cartella senza nome 4/Sources/NativeStackClient/AutoStartStore.swift" : {
+    "const-values" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Debug/NativeStackClient-t.build/Objects-normal/arm64/AutoStartStore.swiftconstvalues",
+    "dependencies" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Debug/NativeStackClient-t.build/Objects-normal/arm64/AutoStartStore.d",
+    "diagnostics" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Debug/NativeStackClient-t.build/Objects-normal/arm64/AutoStartStore.dia",
+    "index-unit-output-path" : "/NativeStackKit.build/Debug/NativeStackClient-t.build/Objects-normal/arm64/AutoStartStore.o",
+    "llvm-bc" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Debug/NativeStackClient-t.build/Objects-normal/arm64/AutoStartStore.bc",
+    "object" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Debug/NativeStackClient-t.build/Objects-normal/arm64/AutoStartStore.o",
+    "swift-dependencies" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Debug/NativeStackClient-t.build/Objects-normal/arm64/AutoStartStore.swiftdeps",
+    "swiftmodule" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Debug/NativeStackClient-t.build/Objects-normal/arm64/AutoStartStore~partial.swiftmodule"
+  },
   "/Users/shiberal/Desktop/cartella senza nome 4/Sources/NativeStackClient/ComposeHostsInjector.swift" : {
     "const-values" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Debug/NativeStackClient-t.build/Objects-normal/arm64/ComposeHostsInjector.swiftconstvalues",
     "dependencies" : "/Users/shiberal/Desktop/cartella senza nome 4/.build/out/Intermediates.noindex/NativeStackKit.build/Debug/NativeStackClient-t.build/Objects-normal/arm64/ComposeHostsInjector.d",
