@@ -164,6 +164,8 @@ shasum -a 256 nativestack-0.2.0.tar.gz
 
 Push the tag to GitHub, then users can `brew install nativestack` without `--build-from-source`.
 
+**Note:** The `Unable to query GitHub for recent issues` warning is harmless — it appears because the placeholder `nativestack/nativestack` repo does not exist yet. Update `homepage`, `url`, and `head` in the formula when you publish your repository.
+
 ## Build NativeStack
 
 ```bash

@@ -19,6 +19,13 @@ class Nativestack < Formula
 
   head "https://github.com/nativestack/nativestack.git", branch: "main"
 
+  # Fetched before the sandboxed build phase (SPM cannot download deps during install).
+  resource "swift-argument-parser" do
+    url "https://github.com/apple/swift-argument-parser.git",
+        tag: "1.8.2",
+        revision: "6a52f3251125d74daf04fcbd5e6f08a75d074382"
+  end
+
   depends_on xcode: ["16.0", :build]
   depends_on macos: :sequoia
   depends_on arch: :arm64
@@ -29,7 +36,13 @@ class Nativestack < Formula
 
     ENV["MACOSX_DEPLOYMENT_TARGET"] = MacOS.version.to_s
 
+    dep = resource("swift-argument-parser")
+    (buildpath/"swift-argument-parser").install dep
+
     cd project_root do
+      system "swift", "package", "--disable-sandbox", "edit",
+             "swift-argument-parser", "--path", buildpath/"swift-argument-parser"
+
       system "swift", "build",
              "-c", "release",
              "--disable-sandbox",
